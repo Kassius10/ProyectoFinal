@@ -13,3 +13,9 @@ ktor:
 database:
   uri: "mongodb://mongoadmin:mongopass@localhost/proyecto?authSource=admin"
   database: "proyecto"
+jwt:
+  audience: "gymkhana"
+  realm: "gymkhana experience"
+  secret: "3sta€sL@ContraS€ñaD3Pru€b@"
+  issuer: "Daniel Carmona"
+  expiration: "3600"

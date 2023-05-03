@@ -24,6 +24,11 @@ class UsuarioRepository(
             .findOneById(id)
     }
 
+    override suspend fun getByUsername(username: String): Usuario? = withContext(Dispatchers.IO) {
+        context.mongoDatabase.getCollection<Usuario>()
+            .find("{'userName': '$username'}").first()
+    }
+
     override suspend fun create(usuario: Usuario): Usuario = withContext(Dispatchers.IO) {
         context.mongoDatabase.getCollection<Usuario>()
             .save(usuario)

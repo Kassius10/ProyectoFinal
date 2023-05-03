@@ -19,3 +19,9 @@ data class UsuarioDTO(
     var name: String,
     var surname: String
 )
+
+@Serializable
+data class UserLogin(
+    val userName: String,
+    val password: String
+)

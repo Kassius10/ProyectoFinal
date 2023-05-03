@@ -3,8 +3,10 @@ package com.proyecto.routes
 import com.github.michaelbull.result.onFailure
 import com.github.michaelbull.result.onSuccess
 import com.proyecto.dto.CreateUsuario
+import com.proyecto.dto.UserLogin
 import com.proyecto.mappers.toUsuario
 import com.proyecto.mappers.toUsuarioDTO
+import com.proyecto.services.TokenService
 import com.proyecto.services.usuarios.IUsuarioService
 import io.ktor.http.*
 import io.ktor.server.application.*
@@ -14,10 +16,12 @@ import io.ktor.server.routing.*
 import kotlinx.coroutines.flow.toList
 import org.bson.types.ObjectId
 import org.koin.ktor.ext.inject
+import org.mindrot.jbcrypt.BCrypt
 import java.lang.IllegalArgumentException
 
 fun Application.usuarioRoutes(){
     val service : IUsuarioService by inject()
+    val tokenService: TokenService by inject()
 
     routing {
         route("/usuario"){
@@ -74,6 +78,24 @@ fun Application.usuarioRoutes(){
                 }
 
             }
+        }
+
+        post("/login") {
+            val login = call.receive<UserLogin>()
+
+            service.getByUsername(login.userName)
+                .onSuccess {
+                    if (BCrypt.checkpw(login.password,it.password)){
+                        val token = tokenService.generateJWT(it)
+                        call.respond(HttpStatusCode.OK,token)
+                    }else{
+                        call.respond(HttpStatusCode.Unauthorized, "El nombre de usuario o contraseña son incorrectos.")
+                    }
+                }
+                .onFailure {
+                    call.respond(HttpStatusCode.NotFound,it.message)
+                }
+
         }
     }
 
