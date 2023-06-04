@@ -3,16 +3,14 @@ ktor:
     modules:
       - com.proyecto.ApplicationKt.module
   deployment:
-    sslPort: 8080
+#    sslPort: 8080
+  port: 8080
   security:
     ssl:
       keyStore: cert/server_keystore.p12
       keyAlias: serverKeyPair
       keyStorePassword: 1234567
       privateKeyPassword: 1234567
-database:
-  uri: "mongodb://mongoadmin:mongopass@localhost/proyecto?authSource=admin"
-  database: "proyecto"
 jwt:
   audience: "gymkhana"
   realm: "gymkhana experience"

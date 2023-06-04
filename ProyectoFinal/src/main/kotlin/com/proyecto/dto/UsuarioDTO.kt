@@ -1,6 +1,6 @@
 package com.proyecto.dto
 
-import joseluisgs.es.serializers.LocalDateSerializer
+import com.proyecto.serializer.LocalDateSerializer
 import kotlinx.serialization.Serializable
 import java.time.LocalDate
 
@@ -9,6 +9,7 @@ data class CreateUsuario(
     var userName: String,
     var name: String,
     var surname: String,
+    var email: String,
     var password: String,
     @Serializable(with = LocalDateSerializer::class)
     var dateBirth: LocalDate
@@ -17,11 +18,21 @@ data class CreateUsuario(
 data class UsuarioDTO(
     var userName: String,
     var name: String,
-    var surname: String
+    var surname: String,
+    var email: String,
 )
 
 @Serializable
 data class UserLogin(
     val userName: String,
     val password: String
+)
+
+@Serializable
+data class UsuarioDTOWithToken(
+    var userName: String,
+    var name: String,
+    var surname: String,
+    var email: String,
+    var token: String
 )

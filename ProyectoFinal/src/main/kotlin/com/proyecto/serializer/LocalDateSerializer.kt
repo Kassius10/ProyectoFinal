@@ -1,4 +1,4 @@
-package joseluisgs.es.serializers
+package com.proyecto.serializer
 
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.descriptors.PrimitiveKind

@@ -6,10 +6,12 @@ import com.proyecto.dto.CreateUsuario
 import com.proyecto.dto.UserLogin
 import com.proyecto.mappers.toUsuario
 import com.proyecto.mappers.toUsuarioDTO
+import com.proyecto.mappers.toUsuarioDtoWithToken
 import com.proyecto.services.TokenService
 import com.proyecto.services.usuarios.IUsuarioService
 import io.ktor.http.*
 import io.ktor.server.application.*
+import io.ktor.server.plugins.requestvalidation.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
@@ -54,12 +56,13 @@ fun Application.usuarioRoutes(){
 
             post {
                 val usuario = call.receive<CreateUsuario>()
+                println(usuario)
                 service.create(usuario.toUsuario())
                     .onSuccess {
                         call.respond(HttpStatusCode.Created,it.toUsuarioDTO())
                     }
                     .onFailure {
-                        call.respond("ERROR ${it.message}")
+                        call.respond(HttpStatusCode.BadRequest,"ERROR ${it.message}")
                     }
 
             }
@@ -71,7 +74,7 @@ fun Application.usuarioRoutes(){
                             call.respond(HttpStatusCode.NoContent)
                         }
                         .onFailure {
-                            call.respond(HttpStatusCode.NotFound,"ERROR ${it.message}")
+                            call.respond(HttpStatusCode.NotFound,"${it.message}")
                         }
                 }catch(e: IllegalArgumentException){
                     call.respond(HttpStatusCode.BadRequest,"No ha si posible eliminar el usuario.")
@@ -82,12 +85,11 @@ fun Application.usuarioRoutes(){
 
         post("/login") {
             val login = call.receive<UserLogin>()
-
             service.getByUsername(login.userName)
                 .onSuccess {
                     if (BCrypt.checkpw(login.password,it.password)){
                         val token = tokenService.generateJWT(it)
-                        call.respond(HttpStatusCode.OK,token)
+                        call.respond(HttpStatusCode.OK,it.toUsuarioDtoWithToken(token))
                     }else{
                         call.respond(HttpStatusCode.Unauthorized, "El nombre de usuario o contraseña son incorrectos.")
                     }
@@ -95,6 +97,21 @@ fun Application.usuarioRoutes(){
                 .onFailure {
                     call.respond(HttpStatusCode.NotFound,it.message)
                 }
+        }
+        post("/register") {
+            try {
+                val usuario = call.receive<CreateUsuario>()
+                service.create(usuario.toUsuario())
+                    .onSuccess {
+                        val token = tokenService.generateJWT(it)
+                        call.respond(HttpStatusCode.Created,it.toUsuarioDtoWithToken(token))
+                    }
+                    .onFailure {
+                        call.respond(HttpStatusCode.BadRequest,"${it.message}")
+                    }
+            }catch (e: RequestValidationException){
+                call.respond(HttpStatusCode.BadRequest,e.reasons)
+            }
 
         }
     }

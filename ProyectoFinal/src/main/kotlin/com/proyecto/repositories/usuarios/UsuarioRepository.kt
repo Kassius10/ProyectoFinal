@@ -29,6 +29,11 @@ class UsuarioRepository(
             .find("{'userName': '$username'}").first()
     }
 
+    override suspend fun getByEmail(email: String): Usuario?  = withContext(Dispatchers.IO)  {
+        context.mongoDatabase.getCollection<Usuario>()
+            .find("{'email': '$email'}").first()
+    }
+
     override suspend fun create(usuario: Usuario): Usuario = withContext(Dispatchers.IO) {
         context.mongoDatabase.getCollection<Usuario>()
             .save(usuario)

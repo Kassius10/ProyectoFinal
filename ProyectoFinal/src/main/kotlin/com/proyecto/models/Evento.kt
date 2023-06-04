@@ -14,9 +14,10 @@ data class Evento(
     @Serializable(with = ObjectIdSerializer::class)
     val id: ObjectId,
     var nombre: String,
+    var descripcion: String,
     @Serializable(with =LocalDateTimeSerializer::class)
     var fecha: LocalDateTime,
     var lugar: String,
     var imagen: String?,
-//    val jugadores: List<Jugadores> = mutableListOf() TODO debido a esto quizas vendria mejor cambiar la bbdd a mongo y tener embebido
+    var desafios: List<Desafio>
 )

@@ -38,11 +38,17 @@ class UsuarioService(
     }
 
     override suspend fun create(usuario: Usuario): Result<Usuario, UsuarioError> {
-        val exist = repository.getById(usuario.id)
+        val exist = repository.getByUsername(usuario.userName)
+        val userEmail = repository.getByEmail(usuario.email)
+
         exist?.let {
             return Err(UsuarioError.Exist("Ya existe el usuario."))
         }.run {
-            return Ok(repository.create(usuario))
+            userEmail?.let {
+                return Err(UsuarioError.Exist("Ya existe el correo."))
+            }.run{
+                return Ok(repository.create(usuario))
+            }
         }
     }
 

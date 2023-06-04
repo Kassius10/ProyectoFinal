@@ -33,9 +33,11 @@ class EventoServiceTest {
     private val evento = Evento(
         id = ObjectId(),
         nombre = "EventoTest",
+        descripcion = "Evento",
         fecha = LocalDateTime.now(),
         lugar = "Test",
-        imagen = ""
+        imagen = "",
+        desafios = mutableListOf()
     )
 
     @Test
