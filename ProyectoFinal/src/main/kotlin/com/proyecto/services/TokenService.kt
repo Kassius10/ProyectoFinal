@@ -18,6 +18,7 @@ class TokenService(
             .withIssuer(tokenConfig.issuer)
             .withSubject("Authentication")
             .withClaim("username",user.userName)
+            .withClaim("rol",user.rol.name)
             .withExpiresAt(Date(System.currentTimeMillis() + tokenConfig.expiration * 1000))
             .sign(Algorithm.HMAC512(tokenConfig.secret))
     }

@@ -23,11 +23,13 @@ class EventoRepositoryTest {
         desafios = mutableListOf()
     )
 
-//    @Test
-//    fun getAll() = runTest{
-//        val res = repository.getAll().toList()
-//        assertEquals(res, listOf<Evento>())
-//    }
+    @Test
+    fun getAll() = runTest{
+        repository.create(evento)
+        val res = repository.getAll().toList()
+        assertTrue(res.isNotEmpty())
+        repository.delete(evento.id)
+    }
 
     @Test
     fun getById() = runTest {

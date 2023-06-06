@@ -15,7 +15,8 @@ fun CreateUsuario.toUsuario(): Usuario{
         surname = this.surname,
         password = BCrypt.hashpw(this.password,BCrypt.gensalt(12)),
         email = this.email,
-        dateBirth = this.dateBirth
+        dateBirth = this.dateBirth,
+        rol = this.rol
     )
 }
 fun Usuario.toUsuarioDTO(): UsuarioDTO {
@@ -23,7 +24,8 @@ fun Usuario.toUsuarioDTO(): UsuarioDTO {
         userName = this.userName,
         name = this.name,
         surname = this.surname,
-        email = this.email
+        email = this.email,
+        dateBirth = this.dateBirth,
     )
 }
 

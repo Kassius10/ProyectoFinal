@@ -5,9 +5,7 @@ import com.github.michaelbull.result.onSuccess
 import com.proyecto.dto.CreateEvento
 import com.proyecto.mappers.toEvento
 import com.proyecto.mappers.toEventoDTO
-import com.proyecto.models.Desafio
 import com.proyecto.models.Ranking
-import com.proyecto.models.RankingUser
 import com.proyecto.services.database.DatabaseContext
 import com.proyecto.services.eventos.IEventoService
 import io.ktor.http.*
@@ -82,9 +80,9 @@ fun Application.eventoRoutes(){
                 ObjectId(),
                 "eventoid",
                 mutableListOf(
-                    RankingUser(1,"usuario","1:20:01"),
-                    RankingUser(2,"usuario","1:10:01"),
-                    RankingUser(3,"usuario","1:20:51")
+                    Ranking(1,"usuario","1:20:01"),
+                    Ranking(2,"usuario","1:10:01"),
+                    Ranking(3,"usuario","1:20:51")
                 ).sortedBy { it.tiempo }
             )
             context.mongoDatabase.getCollection<Ranking>()

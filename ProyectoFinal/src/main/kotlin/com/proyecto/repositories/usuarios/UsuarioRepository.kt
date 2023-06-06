@@ -1,6 +1,5 @@
 package com.proyecto.repositories.usuarios
 
-import com.proyecto.models.Evento
 import com.proyecto.models.Usuario
 import com.proyecto.services.database.DatabaseContext
 import kotlinx.coroutines.Dispatchers
@@ -9,6 +8,7 @@ import kotlinx.coroutines.reactive.asFlow
 import kotlinx.coroutines.withContext
 import org.bson.types.ObjectId
 import org.koin.core.annotation.Single
+import org.litote.kmongo.coroutine.updateOne
 
 @Single
 class UsuarioRepository(
@@ -45,7 +45,8 @@ class UsuarioRepository(
             .deleteOneById(id).let { true }
     }
 
-    override suspend fun update(usuario: Usuario): Usuario {
-        TODO("Not yet implemented")
+    override suspend fun update(usuario: Usuario): Usuario = withContext(Dispatchers.IO) {
+        context.mongoDatabase.getCollection<Usuario>().updateOne(usuario)
+        usuario
     }
 }

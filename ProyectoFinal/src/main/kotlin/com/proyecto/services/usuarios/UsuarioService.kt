@@ -3,6 +3,7 @@ package com.proyecto.services.usuarios
 import com.github.michaelbull.result.Err
 import com.github.michaelbull.result.Ok
 import com.github.michaelbull.result.Result
+import com.proyecto.dto.UpdateUsuario
 import com.proyecto.errors.EventoError
 import com.proyecto.errors.UsuarioError
 import com.proyecto.models.Usuario
@@ -49,6 +50,29 @@ class UsuarioService(
             }.run{
                 return Ok(repository.create(usuario))
             }
+        }
+    }
+
+    override suspend fun update(id: ObjectId, usuario: UpdateUsuario): Result<Usuario, UsuarioError> {
+        val exist = repository.getById(id)
+
+        exist?.let {
+            val userName = repository.getByUsername(usuario.userName)
+            val userEmail = repository.getByEmail(usuario.email)
+
+            if(userName != null && exist.id != userName.id) return Err(UsuarioError.Exist("Ya existe el nombre de usuario."))
+            if(userEmail != null && exist.id != userEmail.id) return Err(UsuarioError.Exist("Ya existe el correo."))
+
+            val usuarioUpdate = it.apply {
+                it.userName=  usuario.userName
+                it.name = usuario.name
+                it.surname = usuario.surname
+                it.email = usuario.email
+                it.dateBirth = usuario.dateBirth
+            }
+            return Ok(repository.update(usuarioUpdate))
+        }.run {
+            return Err(UsuarioError.NoExist("No existe el usuario."))
         }
     }
 

@@ -18,5 +18,10 @@ data class Usuario(
     var email: String,
     var password: String,
     @Serializable(with = LocalDateSerializer::class)
-    var dateBirth: LocalDate
-)
+    var dateBirth: LocalDate,
+    val rol: Rol = Rol.USER
+){
+    enum class Rol{
+        USER, ADMIN
+    }
+}
