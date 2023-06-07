@@ -8,6 +8,7 @@ import kotlinx.coroutines.reactive.asFlow
 import kotlinx.coroutines.withContext
 import org.bson.types.ObjectId
 import org.koin.core.annotation.Single
+import org.litote.kmongo.coroutine.updateOne
 
 @Single
 class EventoRepository(
@@ -23,6 +24,11 @@ class EventoRepository(
             .findOneById(id)
     }
 
+    override suspend fun getByName(name: String): Evento? = withContext(Dispatchers.IO) {
+        context.mongoDatabase.getCollection<Evento>()
+            .find("{'nombre': '$name'}").first()
+    }
+
     override suspend fun create(evento: Evento): Evento = withContext(Dispatchers.IO){
         context.mongoDatabase.getCollection<Evento>()
             .save(evento)
@@ -34,7 +40,9 @@ class EventoRepository(
             .deleteOneById(id).let { true }
     }
 
-    override suspend fun update(evento: Evento): Evento {
-        TODO("Not yet implemented")
+    override suspend fun update(evento: Evento): Evento = withContext(Dispatchers.IO) {
+        context.mongoDatabase.getCollection<Evento>()
+            .updateOne(evento)
+        evento
     }
 }

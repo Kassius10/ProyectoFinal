@@ -20,7 +20,8 @@ class EventoRepositoryTest {
         fecha = LocalDateTime.now(),
         lugar = "Test",
         imagen = "",
-        desafios = mutableListOf()
+        desafios = mutableListOf(),
+        ranking = mutableListOf()
     )
 
     @Test
@@ -46,6 +47,22 @@ class EventoRepositoryTest {
     }
 
     @Test
+    fun getByName() = runTest {
+        repository.create(evento)
+        val res = repository.getByName(evento.nombre)
+
+        assertAll(
+            {assertEquals(res!!.id,evento.id)},
+            {assertEquals(res!!.nombre,evento.nombre)},
+            {assertEquals(res!!.lugar,evento.lugar)},
+            {assertEquals(res!!.imagen,evento.imagen)},
+        )
+        repository.delete(evento.id)
+    }
+
+
+
+    @Test
     fun create() = runTest {
         val res = repository.create(evento)
 
@@ -64,5 +81,22 @@ class EventoRepositoryTest {
         val res = repository.delete(evento.id)
 
         assertTrue(res)
+    }
+
+    @Test
+    fun update() = runTest {
+        repository.create(evento)
+        evento.nombre = "NuevoTest"
+
+        val res = repository.update(evento)
+
+        assertAll(
+            {assertEquals(res.id,evento.id)},
+            {assertEquals(res.nombre,evento.nombre)},
+            {assertEquals(res.lugar,evento.lugar)},
+            {assertEquals(res.imagen,evento.imagen)},
+        )
+
+        repository.delete(evento.id)
     }
 }

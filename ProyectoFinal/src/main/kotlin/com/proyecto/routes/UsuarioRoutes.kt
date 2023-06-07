@@ -61,7 +61,7 @@ fun Application.usuarioRoutes(){
                                     call.respond(HttpStatusCode.NotFound,"ERROR ${it.message}")
                                 }
                         }catch(e: IllegalArgumentException){
-                            call.respond(HttpStatusCode.BadRequest,"No ha si posible buscar el usuario.")
+                            call.respond(HttpStatusCode.BadRequest,"No ha sido posible buscar el usuario.")
                         }
                     }
                     call.respond(HttpStatusCode.Forbidden,"No tiene permisos suficientes.")
@@ -100,12 +100,15 @@ fun Application.usuarioRoutes(){
                                 .onSuccess {
                                     call.respond(HttpStatusCode.OK,it.toUsuarioDTO())
                                 }.onFailure {
-                                    println("Es aca")
-                                    call.respond(HttpStatusCode.NotFound, it.message)
+                                    if (it.message.contains("No existe")){
+                                        call.respond(HttpStatusCode.NotFound,it.message)
+                                    }else{
+                                        call.respond(HttpStatusCode.BadRequest,it.message)
+                                    }
                                 }
 
                         }catch(e: IllegalArgumentException){
-                            call.respond(HttpStatusCode.BadRequest,"No ha si posible actualizar el usuario.")
+                            call.respond(HttpStatusCode.BadRequest,"No ha sido posible actualizar el usuario.")
                         }catch (e: RequestValidationException){
                             call.respond(HttpStatusCode.BadRequest,e.reasons)
                         }
@@ -127,7 +130,7 @@ fun Application.usuarioRoutes(){
                                     call.respond(HttpStatusCode.NotFound, it.message)
                                 }
                         }catch(e: IllegalArgumentException){
-                            call.respond(HttpStatusCode.BadRequest,"No ha si posible eliminar el usuario.")
+                            call.respond(HttpStatusCode.BadRequest,"No ha sido posible eliminar el usuario.")
                         }
                     }
                     call.respond(HttpStatusCode.Forbidden,"No tiene permisos suficientes.")
@@ -169,7 +172,7 @@ fun Application.usuarioRoutes(){
                         call.respond(HttpStatusCode.Created,it.toUsuarioDtoWithToken(token))
                     }
                     .onFailure {
-                        call.respond(HttpStatusCode.BadRequest,"${it.message}")
+                        call.respond(HttpStatusCode.BadRequest, it.message)
                     }
             }catch (e: RequestValidationException){
                 call.respond(HttpStatusCode.BadRequest,e.reasons)

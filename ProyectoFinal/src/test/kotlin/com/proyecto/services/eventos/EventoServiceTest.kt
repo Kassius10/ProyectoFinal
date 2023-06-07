@@ -1,6 +1,10 @@
 package com.proyecto.services.eventos
 
 import com.github.michaelbull.result.get
+import com.github.michaelbull.result.getError
+import com.proyecto.dto.UpdateEvento
+import com.proyecto.models.Desafio
+import com.proyecto.models.Direccion
 import com.proyecto.models.Evento
 import com.proyecto.repositories.eventos.EventoRepository
 import com.proyecto.repositories.eventos.IEventoRepository
@@ -37,12 +41,23 @@ class EventoServiceTest {
         fecha = LocalDateTime.now(),
         lugar = "Test",
         imagen = "",
-        desafios = mutableListOf()
+        desafios = mutableListOf(),
+        ranking = mutableListOf()
+    )
+    private val updateEvento = UpdateEvento(
+        nombre = "EventoTest1",
+        descripcion = "Evento",
+        fecha = LocalDateTime.now(),
+        lugar = "Test",
+        imagen = "",
+        desafios = mutableListOf(
+            Desafio(1,"test","test", Direccion("123","123"), "res","clave")
+        ),
     )
 
     @Test
     fun getAll() = runTest {
-        coEvery { repository.getAll() } returns flowOf<Evento>()
+        coEvery { repository.getAll() } returns flowOf()
         val res = service.getAll().toList()
 
         assertEquals(res, listOf<Evento>())
@@ -66,8 +81,19 @@ class EventoServiceTest {
     }
 
     @Test
-    fun create()= runTest {
+    fun getByIdNotFound() = runTest {
         coEvery { repository.getById(evento.id) } returns null
+
+        val res = service.getById(evento.id)
+
+        assertTrue(res.getError()!!.message.contains("No existe"))
+
+        coVerify { repository.getById(evento.id) }
+    }
+
+    @Test
+    fun create()= runTest {
+        coEvery { repository.getByName(evento.nombre) } returns null
         coEvery { repository.create(evento) } returns evento
 
         val res = service.create(evento)
@@ -78,8 +104,19 @@ class EventoServiceTest {
             { assertEquals(res.get()!!.lugar, evento.lugar) },
             { assertEquals(res.get()!!.imagen, evento.imagen) },
         )
-        coVerify { repository.getById(evento.id) }
+        coVerify { repository.getByName(evento.nombre) }
         coVerify { repository.create(evento) }
+    }
+
+    @Test
+    fun createError() = runTest {
+        coEvery { repository.getByName(evento.nombre) } returns evento
+
+        val res = service.create(evento)
+
+        assertTrue(res.getError()!!.message.contains("Ya existe"))
+
+        coVerify { repository.getByName(evento.nombre)  }
     }
 
     @Test
@@ -93,5 +130,44 @@ class EventoServiceTest {
 
         coVerify { repository.getById(evento.id) }
         coVerify { repository.delete(evento.id) }
+    }
+
+    @Test
+    fun deleteNotFound() = runTest {
+        coEvery { repository.getById(evento.id) } returns null
+
+        val res = service.delete(evento.id)
+
+        assertTrue(res.getError()!!.message.contains("No existe"))
+
+        coVerify { repository.getById(evento.id)  }
+    }
+    @Test
+    fun update() = runTest {
+        coEvery { repository.getById(evento.id) } returns evento
+        coEvery { repository.getByName(updateEvento.nombre) } returns evento
+        coEvery { repository.update(evento)} returns evento
+
+        val res = service.update(evento.id,updateEvento)
+
+        assertAll(
+            { assertEquals(res.get()!!.nombre, updateEvento.nombre) },
+            { assertEquals(res.get()!!.lugar, updateEvento.lugar) },
+            { assertEquals(res.get()!!.imagen, updateEvento.imagen) },
+        )
+
+        coVerify { repository.getById(evento.id)  }
+        coVerify { repository.getByName(updateEvento.nombre) }
+        coVerify { repository.update(evento)  }
+    }
+
+    @Test
+    fun updateNotFound() = runTest {
+        coEvery { repository.getById(evento.id) } returns null
+
+        val res = service.update(evento.id,updateEvento)
+        assertTrue(res.getError()!!.message.contains("No existe"))
+
+        coVerify { repository.getById(evento.id)  }
     }
 }

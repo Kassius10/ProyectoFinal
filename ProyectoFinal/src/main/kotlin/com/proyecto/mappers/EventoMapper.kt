@@ -10,21 +10,23 @@ import java.time.LocalDateTime
 fun CreateEvento.toEvento(): Evento{
     return Evento(
         id = ObjectId(),
-        nombre = this.name,
+        nombre = this.nombre,
         descripcion = this.descripcion,
-        fecha = LocalDateTime.now(),
+        fecha = this.fecha,
         lugar = this.lugar,
         imagen = this.imagen ?: "url", //TODO poner url por defecto
-        desafios = this.desafios
+        desafios = this.desafios,
+        ranking = this.ranking
     )
 }
 fun Evento.toEventoDTO(): EventoDTO {
     return EventoDTO(
-        name = this.nombre,
+        nombre = this.nombre,
         descripcion = this.descripcion,
         fecha = this.fecha,
         lugar = this.lugar,
         imagen = this.imagen ?: "",
-        desafios = this.desafios
+        desafios = this.desafios,
+        ranking = this.ranking
     )
 }

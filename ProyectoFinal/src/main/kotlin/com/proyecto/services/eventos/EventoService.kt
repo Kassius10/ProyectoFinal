@@ -3,7 +3,9 @@ package com.proyecto.services.eventos
 import com.github.michaelbull.result.Err
 import com.github.michaelbull.result.Ok
 import com.github.michaelbull.result.Result
+import com.proyecto.dto.UpdateEvento
 import com.proyecto.errors.EventoError
+import com.proyecto.errors.UsuarioError
 import com.proyecto.models.Evento
 import com.proyecto.repositories.eventos.IEventoRepository
 import kotlinx.coroutines.flow.Flow
@@ -28,9 +30,8 @@ class EventoService(
     }
 
     override suspend fun create(evento: Evento): Result<Evento,EventoError>{
-        val exist = repository.getById(evento.id)
+        val exist = repository.getByName(evento.nombre)
 
-        // TODO esto seria para comparar nombre o eso
         exist?.let {
             return Err(EventoError.Exist("Ya existe el evento."))
         }.run {
@@ -44,9 +45,32 @@ class EventoService(
             repository.delete(id)
             return Ok(true)
         }.run {
-            return Err(EventoError.Exist("No existe el evento con id: $id"))
+            return Err(EventoError.NoExist("No existe el evento con id: $id"))
         }
 
+    }
+    override suspend fun update(id: ObjectId, evento: UpdateEvento): Result<Evento, EventoError> {
+        val exist = repository.getById(id)
+
+        exist?.let {
+            val eventoName = repository.getByName(evento.nombre)
+            if (eventoName != null && eventoName.id != exist.id) return Err(EventoError.Exist("Ya existe el nombre del evento."))
+
+            val eventoUpdate = it.apply {
+                it.nombre = evento.nombre
+                it.descripcion = evento.descripcion
+                it.lugar = evento.lugar
+                it.fecha = evento.fecha
+                it.imagen = evento.imagen
+                if (evento.desafios.isNotEmpty()){
+                    it.desafios = evento.desafios
+                }
+            }
+            return Ok(repository.update(eventoUpdate))
+
+        }.run {
+            return Err(EventoError.NoExist("No existe el evento con id: $id"))
+        }
     }
 
 }
