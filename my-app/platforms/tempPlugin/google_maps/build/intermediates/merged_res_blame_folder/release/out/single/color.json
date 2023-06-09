@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "org.nativescript.google_maps-merged_res-9:/color/common_google_signin_btn_tint.xml",
+        "source": "org.nativescript.google_maps-jetified-play-services-base-18.0.0-0:/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "org.nativescript.google_maps-merged_res-9:/color/common_google_signin_btn_text_light.xml",
+        "source": "org.nativescript.google_maps-jetified-play-services-base-18.0.0-0:/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "org.nativescript.google_maps-merged_res-9:/color/common_google_signin_btn_text_dark.xml",
+        "source": "org.nativescript.google_maps-jetified-play-services-base-18.0.0-0:/color/common_google_signin_btn_text_dark.xml"
+    }
+]

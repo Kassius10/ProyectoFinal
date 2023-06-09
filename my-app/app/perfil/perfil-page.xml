@@ -1,0 +1,36 @@
+<Page
+    navigatingTo="onNavigatingTo"
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    loaded="onLoaded"
+    backgroundColor="#e6e6e6">
+
+    <ActionBar>
+        <NavigationButton tap="onEdit" android.systemIcon="ic_menu_edit" id="edit"/>
+        <Label text="Perfil"></Label>
+        <ActionItem
+            android.systemIcon="ic_menu_close_clear_cancel"
+            tap="logout"
+        />
+    </ActionBar>
+
+    <StackLayout class="page__perfil" id="container">
+        <Label text="&#xf2bd;" class="fas ico_tab text-center" fontSize="110" color="#6f95bf"
+            marginBottom="3" />
+
+        <Label class="label__perfil" text="NOMBRE" />
+        <TextField class="text__perfil" text="{{ name }}" editable="false" />
+
+        <Label class="label__perfil " text="APELLIDOS" />
+        <TextField class="text__perfil" text="{{ surname }}" editable="false" />
+
+        <Label class="label__perfil " text="NOMBRE USUARIO" />
+        <TextField class="text__perfil" text="{{ username }}" editable="false" />
+
+        <Label class="label__perfil" text="CORREO" />
+        <TextField class="text__perfil" text="{{ email }}" editable="false" />
+
+        <Label class="label__perfil" text="FECHA DE NACIMIENTO" />
+        <TextField class="text__perfil" text="{{ dateBirth }}" editable="false" />
+
+    </StackLayout>
+</Page>

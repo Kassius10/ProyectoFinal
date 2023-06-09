@@ -1,0 +1,70 @@
+[
+    {
+        "name": "@nativescript/core",
+        "directory": "..\\..\\node_modules\\@nativescript\\core",
+        "dependencies": []
+    },
+    {
+        "name": "@nativescript/datetimepicker",
+        "directory": "..\\..\\node_modules\\@nativescript\\datetimepicker",
+        "dependencies": []
+    },
+    {
+        "name": "@nativescript/google-maps",
+        "directory": "..\\..\\node_modules\\@nativescript\\google-maps",
+        "dependencies": []
+    },
+    {
+        "name": "@nativescript/secure-storage",
+        "directory": "..\\..\\node_modules\\@nativescript\\secure-storage",
+        "dependencies": []
+    },
+    {
+        "name": "@nativescript/theme",
+        "directory": "..\\..\\node_modules\\@nativescript\\theme",
+        "dependencies": []
+    },
+    {
+        "name": "nativescript-barcodescanner",
+        "directory": "..\\..\\node_modules\\nativescript-barcodescanner",
+        "dependencies": []
+    },
+    {
+        "name": "@master.technology/permissions",
+        "directory": "..\\..\\node_modules\\@master.technology\\permissions",
+        "dependencies": []
+    },
+    {
+        "name": "nativescript-ui-core",
+        "directory": "..\\..\\node_modules\\nativescript-ui-core",
+        "dependencies": []
+    },
+    {
+        "name": "nativescript-permissions",
+        "directory": "..\\..\\node_modules\\nativescript-permissions",
+        "dependencies": [
+            "@master.technology/permissions"
+        ]
+    },
+    {
+        "name": "nativescript-ui-listview",
+        "directory": "..\\..\\node_modules\\nativescript-ui-listview",
+        "dependencies": [
+            "nativescript-ui-core"
+        ]
+    },
+    {
+        "name": "@nativescript/camera",
+        "directory": "..\\..\\node_modules\\@nativescript\\camera",
+        "dependencies": [
+            "nativescript-permissions"
+        ]
+    },
+    {
+        "name": "@nativescript/geolocation",
+        "directory": "..\\..\\node_modules\\@nativescript\\geolocation",
+        "dependencies": [
+            "nativescript-permissions"
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "org.nativescript.google_maps-merged_res-9:/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\danii\\.gradle\\caches\\transforms-3\\a9105ec1e4ae77a5020c8e1db08769e0\\transformed\\core-1.2.0\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "org.nativescript.google_maps-mergeReleaseResources-7:/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\danii\\.gradle\\caches\\transforms-3\\a9105ec1e4ae77a5020c8e1db08769e0\\transformed\\core-1.2.0\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

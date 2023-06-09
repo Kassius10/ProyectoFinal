@@ -1,0 +1,26 @@
+<Page navigatingTo="onNavigatingTo"
+   xmlns="http://schemas.nativescript.org/tns.xsd"
+   xmlns:datetime="@nativescript/datetimepicker"
+   backgroundColor="#e6e6e6">
+
+   <StackLayout class="form_register">
+      <label text="REGISTRARSE" class="h2 text-center" color="#253649" fontWeight="bold" marginBottom="20"/>
+      <TextField hint="Nombre" class="input_register" id="name" color="#253649" />
+      <TextField hint="Primer Apellido" class="input_register" id="firstSurname" color="#253649" />
+      <TextField hint="Segundo Apellido" class="input_register" id="lastSurname" color="#253649" />
+      <TextField hint="Nombre de usuario" class="input_register" autocorrect="false"
+         autocapitalizationType="none" color="#253649"
+         id="username" />
+      <TextField hint="Correo" class="input_register" autocorrect="false" autocapitalizationType="none"
+         id="email" color="#253649" />
+      <TextField hint="Contraseña" class="input_register" id="password" secure="true" autocorrect="false"
+         autocapitalizationType="none" color="#253649" />
+      <TextField hint="Confirmar Contraseña" class="input_register" id="confirmPassword" secure="true"
+         autocorrect="false" color="#253649"
+         autocapitalizationType="none" />
+      <datetime:DatePickerField hint="Fecha de nacimiento" minDate="1900/01/01"
+         dateFormat="yyyy-MM-dd" id="fecha" class="input_register" color="#253649"/>
+
+      <Button text="Registrarse" class="btn__login m-t-30" tap="register" fontSize="17" androidElevation="5" androidDynamicElevationOffset="10"/>
+   </StackLayout>
+</Page>

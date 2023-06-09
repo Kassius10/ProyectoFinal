@@ -1,0 +1,3 @@
+C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\assets\app\bundle.js
+C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\assets\app\runtime.js
+C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\assets\app\vendor.js

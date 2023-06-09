@@ -1,0 +1,39 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="org.nativescript.camera" >
+5
+6    <uses-sdk
+7        android:minSdkVersion="1"
+7-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
+8        android:targetSdkVersion="31" />
+8-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
+9
+10    <uses-permission android:name="android.permission.CAMERA" />
+10-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:8:3-62
+10-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:8:20-60
+11
+12    <application>
+12-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:3:3-7:17
+13        <provider
+13-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:4:5-6:16
+14            android:name="androidx.core.content.FileProvider"
+14-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:4:15-64
+15            android:authorities="${applicationId}.provider"
+15-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:4:65-112
+16            android:exported="false"
+16-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:4:113-137
+17            android:grantUriPermissions="true" >
+17-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:4:138-172
+18            <meta-data
+18-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:5:7-142
+19                android:name="android.support.FILE_PROVIDER_PATHS"
+19-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:5:18-68
+20                android:resource="@xml/provider_paths"
+20-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:5:102-140
+21                tools:replace="android:resource" />
+21-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:5:69-101
+22        </provider>
+23    </application>
+24
+25</manifest>

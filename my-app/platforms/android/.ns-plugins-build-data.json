@@ -1,0 +1,45 @@
+{
+	"@nativescript/core": {
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\core\\platforms\\android\\res\\values\\ids.xml": "af407e752ae7884c6e064d1dc81008497d5ff0cc",
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\core\\platforms\\android\\core.aar": "1b9a2c5e4b3c15607af1cb6df0cb528af1797fcb",
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\core\\platforms\\android\\native-api-usage.json": "4a614afaa51061d74eba0cbe39100f47b0e2a10b",
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\core\\platforms\\android\\widgets-release.aar": "692c83e35dfed2d642e1968abfa2c0996678f20d"
+	},
+	"nativescript-ui-core": {
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\nativescript-ui-core\\platforms\\android\\TNSCore-release.aar": "b0a7669a71f361505f1a91a9ebc1b9cf64213f79"
+	},
+	"nativescript-ui-listview": {
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\nativescript-ui-listview\\platforms\\android\\include.gradle": "1575a4fb773366d6f3cfd6be6f382e2fd9543379",
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\nativescript-ui-listview\\platforms\\android\\TNSListView-release.aar": "aed98c69163dd879617d55ae29553fceb07fa33f"
+	},
+	"@nativescript/secure-storage": {
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\secure-storage\\platforms\\android\\include.gradle": "b2f8625f98afaa063a700e38433054494319e6b0"
+	},
+	"@nativescript/datetimepicker": {
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\datetimepicker\\platforms\\android\\native-api-usage.json": "2e76526d3421cb4e76258e4a86d7c16addd4d19a"
+	},
+	"@nativescript/google-maps": {
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\google-maps\\platforms\\android\\include.gradle": "7d115985730379105825cd3e57dc3252208da7c8",
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\google-maps\\platforms\\android\\google_maps.aar": "aabf22d950eb4c397ebd24a00a7f3e43671e91c7",
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\google-maps\\platforms\\android\\java\\org\\nativescript\\plugins\\google_maps\\GoogleMaps.java": "72aa5a87ee18f35d0e0b2d1262a751559547d333",
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\google-maps\\platforms\\android\\java\\org\\nativescript\\plugins\\google_maps\\ModelExt.kt": "23989dccf0ec6fbaa0329c0e90dacd6007273fbd"
+	},
+	"nativescript-geolocation": {
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\nativescript-geolocation\\platforms\\android\\include.gradle": "a9ad7f439204a251541921d75e1f75ae6dd832c2",
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\nativescript-geolocation\\platforms\\android\\nativescript_geolocation.aar": "b2ab9086897001b3f93ebe3d0b65dbafc010807c"
+	},
+	"@nativescript/geolocation": {
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\geolocation\\platforms\\android\\include.gradle": "5edbfccda0331b16a5943a06a2094e4b4e41f3aa"
+	},
+	"nativescript-barcodescanner": {
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\nativescript-barcodescanner\\platforms\\android\\nativescript_barcodescanner.aar": "7a791a809ec0089c58a90305a861707f59471af8",
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\nativescript-barcodescanner\\platforms\\android\\barcodescanner-release-2.1.6.aar": "03bb6a9683c3ee6b620304f321ea48e5de071ae3"
+	},
+	"@nativescript/camera": {
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\camera\\platforms\\android\\java\\org\\nativescript\\plugins\\camera\\Utils.java": "e0065dd76946892e90b11e5c375691f65b0b3300",
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\camera\\platforms\\android\\res\\xml\\provider_paths.xml": "c524931f8b0753cf3ece09a4f315fa0e79dc0cc3",
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\camera\\platforms\\android\\AndroidManifest.xml": "faebbd0ed93a5c418203848d7ba267d9d6103024",
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\camera\\platforms\\android\\camera.aar": "61c0ec0d5fa63b439641a72fa96fe595d13d6932",
+		"C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\node_modules\\@nativescript\\camera\\platforms\\android\\native-api-usage.json": "ba0a9c5bdd962600370c34573ea99a3aca1c2676"
+	}
+}

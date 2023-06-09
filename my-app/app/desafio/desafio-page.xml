@@ -1,0 +1,29 @@
+<Page
+   navigatingTo="onNavigatingTo"
+   xmlns="http://schemas.nativescript.org/tns.xsd"
+   xmlns:map="@nativescript/google-maps"
+   backgroundColor="#e6e6e6">
+
+   <ScrollView id="scrollView">
+      <StackLayout class="page__desafio">
+         <Label text="{{ nombreDesafio }}" class="title__desafio text-center" textWrap="true" />
+         <Label text="{{ descripcion }}" textWrap="true" class="body__desafio" />
+         <Label text="VAMOS A LA RUTA" class="text-center" fontSize="20" color="white" fontWeight="bold" backgroundColor="#253649" />
+         <map:MapView
+            id="mapView"
+            lat="40.41664676278408"
+            lng="-3.7039406430494086"
+            ready="onReady"
+            width="100%"
+            height="600"
+            margin="30"
+         />
+         <Label class="text-center m-b-20" text="¿ Has encontrado el código ?" fontSize="20"/>
+         <Button tap="onScanQR" text="ESCANEA" />
+         <Label class="res__desafio" text="{{ resultado }}" textWrap="true" id="txtResultado" />
+         <Button tap="onNextPage" text="SIGUIENTE" id="btnNext" />
+      </StackLayout>
+   </ScrollView>
+
+
+</Page>

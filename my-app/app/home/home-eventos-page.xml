@@ -1,0 +1,35 @@
+<Page navigatingTo="onNavigatingTo"
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:lv="nativescript-ui-listview"
+    backgroundColor="#e6e6e6"
+    loaded="onLoaded">
+
+    <ActionBar>
+        <Label text="HOME" />
+    </ActionBar>
+
+    <StackLayout pan="tap">
+        <lv:RadListView
+            items="{{ datosApi }}"
+            selectionBehavior="Press"
+            itemSelected="onItemSelected"
+            marginTop="15"
+        >
+            <lv:RadListView.itemTemplate>
+                <StackLayout orientation="horizontal" class="card" androidElevation="10">
+                    <Image src="res://imgdefault" stretch="aspectFill" width="120"
+                        borderRadius="20 0 0 20" />
+                    <StackLayout orientation="vertical" class="card__vertical">
+                        <Label text="{{ nombre }}" textWrap="true" fontWeight="bold" color="#253649"
+                            fontSize="28" />
+                        <Label text="{{ descripcion }}" textWrap="true" class="body" height="auto"
+                            fontSize="14" maxLines="3" />
+                        <Button class="button__ranking" text="Ranking" tap="lookRanking"/>
+                    </StackLayout>
+                </StackLayout>
+            </lv:RadListView.itemTemplate>
+        </lv:RadListView>
+    </StackLayout>
+
+
+</Page>

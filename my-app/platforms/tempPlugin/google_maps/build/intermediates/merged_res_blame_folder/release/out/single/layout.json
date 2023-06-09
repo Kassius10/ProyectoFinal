@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "org.nativescript.google_maps-merged_res-9:/layout/notification_action.xml",
+        "source": "org.nativescript.google_maps-core-1.2.0-2:/layout/notification_action.xml"
+    },
+    {
+        "merged": "org.nativescript.google_maps-merged_res-9:/layout/notification_template_part_chronometer.xml",
+        "source": "org.nativescript.google_maps-core-1.2.0-2:/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "org.nativescript.google_maps-merged_res-9:/layout/notification_template_custom_big.xml",
+        "source": "org.nativescript.google_maps-core-1.2.0-2:/layout/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "org.nativescript.google_maps-merged_res-9:/layout/notification_template_icon_group.xml",
+        "source": "org.nativescript.google_maps-core-1.2.0-2:/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "org.nativescript.google_maps-merged_res-9:/layout/custom_dialog.xml",
+        "source": "org.nativescript.google_maps-core-1.2.0-2:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "org.nativescript.google_maps-merged_res-9:/layout/notification_template_part_time.xml",
+        "source": "org.nativescript.google_maps-core-1.2.0-2:/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "org.nativescript.google_maps-merged_res-9:/layout/notification_action_tombstone.xml",
+        "source": "org.nativescript.google_maps-core-1.2.0-2:/layout/notification_action_tombstone.xml"
+    }
+]

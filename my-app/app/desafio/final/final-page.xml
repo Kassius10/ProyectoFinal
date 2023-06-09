@@ -1,0 +1,14 @@
+<Page
+   navigatingTo="onNavigatingTo"
+   xmlns="http://schemas.nativescript.org/tns.xsd"
+   backgroundColor="#e6e6e6">
+
+   <StackLayout class="page__final">
+
+      <Label text="ENHORABUENA" class="titulo__final text-center"/>
+      <Label text="Has completado el desafio" class="titulo2__final text-center" />
+      <Label text="Tu tiempo ha sido" class="text-center" fontSize="20"/>
+      <Label text="{{ time }}" class="tiempo h2 m-t-20 text-center" />
+      <Button text="FINALIZAR" tap="onTap" marginTop="80"/>
+   </StackLayout>
+</Page>

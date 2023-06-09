@@ -1,0 +1,44 @@
+<Page
+   navigatingTo="onNavigatingTo"
+   xmlns:datetime="@nativescript/datetimepicker"
+   xmlns="http://schemas.nativescript.org/tns.xsd"
+   loaded="onLoaded"
+   backgroundColor="#e6e6e6">
+
+   <ActionBar>
+      <Label text="Perfil"></Label>
+      <ActionItem
+         android.systemIcon="ic_menu_save"
+         tap="save"
+      />
+   </ActionBar>
+   <ScrollView>
+      <StackLayout class="page__perfil" id="container">
+         <Label text="&#xf2bd;" class="fas ico_tab text-center" fontSize="110" color="#6f95bf"
+            marginBottom="3" />
+
+         <Label class="label__perfil" text="NOMBRE" />
+         <TextField class="text__perfil" text="{{ name }}" id="name" focus="focus" blur="blur" />
+
+         <Label class="label__perfil " text="APELLIDOS" />
+         <TextField class="text__perfil" text="{{ surname }}" id="surname" focus="focus" blur="blur" />
+
+         <Label class="label__perfil " text="NOMBRE USUARIO" />
+         <TextField class="text__perfil" text="{{ userName }}" id="username" focus="focus"
+            blur="blur" autocorrect="false" autocapitalizationType="none" />
+
+         <Label class="label__perfil" text="CORREO" />
+         <TextField class="text__perfil" text="{{ email }}" id="email" focus="focus" blur="blur"
+         autocorrect="false" autocapitalizationType="none" />
+
+         <Label class="label__perfil" text="FECHA DE NACIMIENTO" />
+
+         <datetime:DatePickerField class="text__perfil" minDate="1900/01/01"
+            dateFormat="yyyy-MM-dd" id="fecha" date="{{ dateBirth }}" />
+
+         <Button text="Cancelar" tap="cancel" marginTop="10" width="40%" height="50" backgroundColor="#6f95bf"/>
+
+      </StackLayout>
+   </ScrollView>
+
+</Page>
