@@ -33,7 +33,7 @@ fun Application.eventoRoutes(){
             authenticate {
                 get {
                     val rol = getRol()
-                    if (rol.equals("ADMIN")){
+                    if (rol.equals("ADMIN") || rol.equals("USER")){
                         val eventos = service.getAll().toList()
                         if (eventos.isNotEmpty()){
                             call.respond(HttpStatusCode.OK,eventos)
@@ -128,6 +128,30 @@ fun Application.eventoRoutes(){
                         }
                     }
                     call.respond(HttpStatusCode.Forbidden,"No tiene permisos suficientes.")
+                }
+            }
+
+        }
+        route("/ranking"){
+            put("/{id}"){
+                try {
+                    val id = ObjectId(call.parameters["id"])
+                    val ranking = call.receive<Ranking>()
+
+                    service.updateRanking(id,ranking)
+                        .onSuccess {
+                            call.respond(HttpStatusCode.OK)
+                        }
+                        .onFailure {
+                            call.respond(HttpStatusCode.NotFound,it.message)
+                        }
+                } catch (e: RequestValidationException){
+                    call.respond(HttpStatusCode.BadRequest,e.reasons)
+                }catch (e: BadRequestException){
+                    call.respond(HttpStatusCode.BadRequest,"Los datos no son correctos.")
+                }catch (e: IllegalArgumentException){
+                    e.printStackTrace()
+                    call.respond(HttpStatusCode.BadRequest,"No ha sido posible buscar el evento.")
                 }
             }
         }

@@ -14,8 +14,8 @@ data class CreateEvento(
     @Serializable(with = LocalDateTimeSerializer::class)
     val fecha: LocalDateTime,
     val imagen: String?,
-    val desafios: List<Desafio> = mutableListOf(),
-    val ranking: List<Ranking> = mutableListOf()
+    val desafios: MutableList<Desafio> = mutableListOf(),
+    val ranking: MutableList<Ranking> = mutableListOf()
 )
 
 @Serializable
@@ -26,7 +26,7 @@ data class UpdateEvento(
     @Serializable(with = LocalDateTimeSerializer::class)
     val fecha: LocalDateTime,
     val imagen: String?,
-    val desafios: List<Desafio> = mutableListOf()
+    val desafios: MutableList<Desafio> = mutableListOf()
 )
 @Serializable
 data class EventoDTO(
@@ -36,6 +36,6 @@ data class EventoDTO(
     @Serializable(with = LocalDateTimeSerializer::class)
     val fecha: LocalDateTime,
     val imagen: String,
-    val desafios: List<Desafio>,
-    val ranking: List<Ranking>
+    val desafios: MutableList<Desafio>,
+    val ranking: MutableList<Ranking>
 )

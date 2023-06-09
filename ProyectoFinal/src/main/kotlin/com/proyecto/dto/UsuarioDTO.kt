@@ -44,9 +44,12 @@ data class UserLogin(
 
 @Serializable
 data class UsuarioDTOWithToken(
+    var id: String,
     var userName: String,
     var name: String,
     var surname: String,
     var email: String,
-    var token: String
+    var token: String,
+    @Serializable(with = LocalDateSerializer::class)
+    var dateBirth: LocalDate
 )

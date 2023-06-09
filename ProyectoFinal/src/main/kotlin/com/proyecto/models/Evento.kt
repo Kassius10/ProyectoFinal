@@ -19,6 +19,6 @@ data class Evento(
     var fecha: LocalDateTime,
     var lugar: String,
     var imagen: String?,
-    var desafios: List<Desafio>,
-    var ranking: List<Ranking>
+    var desafios: MutableList<Desafio>,
+    var ranking: MutableList<Ranking>
 )

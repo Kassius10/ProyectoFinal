@@ -31,10 +31,12 @@ fun Usuario.toUsuarioDTO(): UsuarioDTO {
 
 fun Usuario.toUsuarioDtoWithToken(token: String): UsuarioDTOWithToken{
     return UsuarioDTOWithToken(
+        id = this.id.toString(),
         userName = this.userName,
         name = this.name,
         surname = this.surname,
         email = this.email,
+        dateBirth = this.dateBirth,
         token = token
     )
 }

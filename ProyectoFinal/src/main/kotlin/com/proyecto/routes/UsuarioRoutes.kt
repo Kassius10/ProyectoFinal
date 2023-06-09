@@ -107,14 +107,16 @@ fun Application.usuarioRoutes(){
                                     }
                                 }
 
+                        }catch(e: BadRequestException){
+                            call.respond(HttpStatusCode.BadRequest,"Los datos no son correctos.")
                         }catch(e: IllegalArgumentException){
+                            e.printStackTrace()
                             call.respond(HttpStatusCode.BadRequest,"No ha sido posible actualizar el usuario.")
                         }catch (e: RequestValidationException){
                             call.respond(HttpStatusCode.BadRequest,e.reasons)
                         }
                         call.respond(HttpStatusCode.Forbidden,"No tiene permisos suficientes.")
                     }
-
                 }
 
                 delete("/{id}") {
@@ -137,6 +139,7 @@ fun Application.usuarioRoutes(){
                 }
             }
         }
+
 
         post("/login") {
             try{

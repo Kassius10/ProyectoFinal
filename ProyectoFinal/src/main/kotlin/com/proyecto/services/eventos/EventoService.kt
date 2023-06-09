@@ -5,8 +5,8 @@ import com.github.michaelbull.result.Ok
 import com.github.michaelbull.result.Result
 import com.proyecto.dto.UpdateEvento
 import com.proyecto.errors.EventoError
-import com.proyecto.errors.UsuarioError
 import com.proyecto.models.Evento
+import com.proyecto.models.Ranking
 import com.proyecto.repositories.eventos.IEventoRepository
 import kotlinx.coroutines.flow.Flow
 import org.bson.types.ObjectId
@@ -28,7 +28,6 @@ class EventoService(
             return Err(EventoError.NoExist("No existe el evento con id: $id"))
         }
     }
-
     override suspend fun create(evento: Evento): Result<Evento,EventoError>{
         val exist = repository.getByName(evento.nombre)
 
@@ -38,7 +37,6 @@ class EventoService(
           return Ok(repository.create(evento))
         }
     }
-
     override suspend fun delete(id: ObjectId): Result<Boolean, EventoError> {
         val exist = repository.getById(id)
         exist?.let {
@@ -47,7 +45,6 @@ class EventoService(
         }.run {
             return Err(EventoError.NoExist("No existe el evento con id: $id"))
         }
-
     }
     override suspend fun update(id: ObjectId, evento: UpdateEvento): Result<Evento, EventoError> {
         val exist = repository.getById(id)
@@ -72,5 +69,23 @@ class EventoService(
             return Err(EventoError.NoExist("No existe el evento con id: $id"))
         }
     }
+    override suspend fun updateRanking(id: ObjectId, ranking: Ranking): Result<Boolean, EventoError> {
+        val exist = repository.getById(id)
 
+        exist?.let {
+            val existUser = it.ranking.find {r -> r.userName.equals(ranking.userName) }
+
+            existUser?.let {
+                if (ranking.tiempo < existUser.tiempo ){
+                    existUser.tiempo = ranking.tiempo
+                }
+            }?: it.ranking.add(ranking)
+
+            it.ranking.sortBy { r -> r.tiempo }
+            repository.update(it)
+            return Ok(true)
+        }.run{
+            return Err(EventoError.NoExist("No existe el evento"))
+        }
+    }
 }

@@ -16,4 +16,4 @@ jwt:
   realm: "gymkhana experience"
   secret: "3sta€sL@ContraS€ñaD3Pru€b@"
   issuer: "Daniel Carmona"
-  expiration: "3600"
+  expiration: "86400"

@@ -6,6 +6,7 @@ import com.proyecto.dto.UpdateEvento
 import com.proyecto.models.Desafio
 import com.proyecto.models.Direccion
 import com.proyecto.models.Evento
+import com.proyecto.models.Ranking
 import com.proyecto.repositories.eventos.EventoRepository
 import com.proyecto.repositories.eventos.IEventoRepository
 import io.mockk.coEvery
@@ -44,6 +45,22 @@ class EventoServiceTest {
         desafios = mutableListOf(),
         ranking = mutableListOf()
     )
+
+    private val eventoRanking = Evento(
+        id = ObjectId(),
+        nombre = "EventoTest",
+        descripcion = "Evento",
+        fecha = LocalDateTime.now(),
+        lugar = "Test",
+        imagen = "",
+        desafios = mutableListOf(),
+        ranking = mutableListOf(
+            Ranking(
+                userName="Prueba",
+                tiempo="0:0:19:00"
+            )
+        )
+    )
     private val updateEvento = UpdateEvento(
         nombre = "EventoTest1",
         descripcion = "Evento",
@@ -53,6 +70,11 @@ class EventoServiceTest {
         desafios = mutableListOf(
             Desafio(1,"test","test", Direccion("123","123"), "res","clave")
         ),
+    )
+
+    private val ranking = Ranking(
+        userName = "Prueba",
+        tiempo = "0:0:14:32"
     )
 
     @Test
@@ -166,6 +188,43 @@ class EventoServiceTest {
         coEvery { repository.getById(evento.id) } returns null
 
         val res = service.update(evento.id,updateEvento)
+        assertTrue(res.getError()!!.message.contains("No existe"))
+
+        coVerify { repository.getById(evento.id)  }
+    }
+
+    @Test
+    fun updateRanking() = runTest {
+        coEvery { repository.getById(evento.id) } returns evento
+        coEvery { repository.update(evento) } returns evento
+
+        val res = service.updateRanking(evento.id,ranking)
+
+        assertTrue(res.get()!!)
+
+        coVerify { repository.getById(evento.id)  }
+        coVerify { repository.update(evento)  }
+    }
+
+    @Test
+    fun updateRankingExist() = runTest {
+        coEvery { repository.getById(eventoRanking.id) } returns eventoRanking
+        coEvery { repository.update(eventoRanking) } returns eventoRanking
+
+        val res = service.updateRanking(eventoRanking.id,ranking)
+
+        assertTrue(res.get()!!)
+
+        coVerify { repository.getById(eventoRanking.id)  }
+        coVerify { repository.update(eventoRanking)  }
+    }
+
+    @Test
+    fun updateRankingNotFound() = runTest {
+        coEvery { repository.getById(evento.id) } returns null
+
+        val res = service.updateRanking(evento.id,ranking)
+
         assertTrue(res.getError()!!.message.contains("No existe"))
 
         coVerify { repository.getById(evento.id)  }
