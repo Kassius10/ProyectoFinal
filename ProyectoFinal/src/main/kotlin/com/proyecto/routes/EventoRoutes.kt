@@ -3,12 +3,12 @@ package com.proyecto.routes
 import com.github.michaelbull.result.onFailure
 import com.github.michaelbull.result.onSuccess
 import com.proyecto.dto.CreateEvento
+import com.proyecto.dto.EventoDTO
 import com.proyecto.dto.UpdateEvento
 import com.proyecto.mappers.toEvento
 import com.proyecto.mappers.toEventoDTO
-import com.proyecto.mappers.toUsuarioDTO
+import com.proyecto.models.Evento
 import com.proyecto.models.Ranking
-import com.proyecto.services.database.DatabaseContext
 import com.proyecto.services.eventos.IEventoService
 import io.ktor.http.*
 import io.ktor.server.application.*
@@ -24,6 +24,7 @@ import kotlinx.coroutines.flow.toList
 import org.bson.types.ObjectId
 import org.koin.ktor.ext.inject
 import java.lang.IllegalArgumentException
+import io.github.smiley4.ktorswaggerui.dsl.*
 
 fun Application.eventoRoutes(){
     val service : IEventoService by inject()
@@ -31,7 +32,23 @@ fun Application.eventoRoutes(){
     routing {
         route("/evento"){
             authenticate {
-                get {
+                get({
+                    description = "Obtener todos los eventos"
+                    response {
+                        HttpStatusCode.OK to {
+                            description = "Obtención de todos los eventos."
+                            body<List<Evento>> { description = "Obtención de datos" }
+                        }
+                        HttpStatusCode.Forbidden to {
+                            description = "No tiene permisos para realizar la accion."
+                            body<String> { description = "No tiene permisos." }
+                        }
+                        HttpStatusCode.NotFound to {
+                            description = "No se ha encontrado eventos a mostrar"
+                            body<String> { description = "No hay eventos a mostrar." }
+                        }
+                    }
+                }) {
                     val rol = getRol()
                     if (rol.equals("ADMIN") || rol.equals("USER")){
                         val eventos = service.getAll().toList()
@@ -44,7 +61,33 @@ fun Application.eventoRoutes(){
                     call.respond(HttpStatusCode.Forbidden,"No tiene permisos suficientes.")
                 }
 
-                get("/{id}") {
+                get("/{id}", {
+                    description = "Obtener un evento por id."
+                    request {
+                        pathParameter<String>("id") {
+                            description = "Id del evento a buscar"
+                            required = true
+                        }
+                    }
+                    response {
+                        HttpStatusCode.OK to {
+                            description = "Obtención del evento por id."
+                            body<EventoDTO> { description = "Evento obtenido." }
+                        }
+                        HttpStatusCode.Forbidden to {
+                            description = "No tiene permisos para realizar la accion."
+                            body<String> { description = "No tiene permisos." }
+                        }
+                        HttpStatusCode.NotFound to {
+                            description = "No se ha encontrado el evento."
+                            body<String> { description = "No existe el evento con la id" }
+                        }
+                        HttpStatusCode.BadRequest to {
+                            description = "No ha sido posible buscar el evento."
+                            body<String> { description = "La id no existe." }
+                        }
+                    }
+                }) {
                     val rol = getRol()
                     if (rol.equals("ADMIN")){
                         try {
@@ -63,7 +106,28 @@ fun Application.eventoRoutes(){
                     call.respond(HttpStatusCode.Forbidden,"No tiene permisos suficientes.")
                 }
 
-                post {
+                post({
+                    description = "Crear un evento."
+                    request {
+                        body<CreateEvento> {
+                            required = true
+                        }
+                    }
+                    response {
+                        HttpStatusCode.Created to {
+                            description = "Evento creado"
+                            body<EventoDTO> { description = "Evento obtenido." }
+                        }
+                        HttpStatusCode.Forbidden to {
+                            description = "No tiene permisos para realizar la accion."
+                            body<String> { description = "No tiene permisos." }
+                        }
+                        HttpStatusCode.BadRequest to {
+                            description = "No ha sido posible crear el evento."
+                            body<String> { description = "Los datos del evento no son correctos." }
+                        }
+                    }
+                }) {
                     val rol = getRol()
                     if (rol.equals("ADMIN")){
                         try {
@@ -83,7 +147,36 @@ fun Application.eventoRoutes(){
                     }
                     call.respond(HttpStatusCode.Forbidden,"No tiene permisos suficientes.")
                 }
-                put("/{id}") {
+                put("/{id}", {
+                    description = "Actualizar datos de un evento por id."
+                    request {
+                        pathParameter<String>("id") {
+                            description = "Id del evento a actualizar"
+                            required = true
+                        }
+                        body<UpdateEvento> {
+                            required = true
+                        }
+                    }
+                    response {
+                        HttpStatusCode.OK to {
+                            description = "Actualizado correctamente el evento"
+                            body<EventoDTO> { description = "Evento actualizado" }
+                        }
+                        HttpStatusCode.Forbidden to {
+                            description = "No tiene permisos para realizar la accion."
+                            body<String> { description = "No tiene permisos." }
+                        }
+                        HttpStatusCode.NotFound to {
+                            description = "No se ha encontrado el evento."
+                            body<String> { description = "No existe el evento con la id" }
+                        }
+                        HttpStatusCode.BadRequest to {
+                            description = "No ha sido posible actualizar el evento."
+                            body<String> { description = "Los datos del evento no son correctos." }
+                        }
+                    }
+                }) {
                     val rol = getRol()
                     if (rol.equals("ADMIN")){
                         try {
@@ -111,7 +204,32 @@ fun Application.eventoRoutes(){
                     call.respond(HttpStatusCode.Forbidden,"No tiene permisos suficientes.")
                 }
 
-                delete("/{id}") {
+                delete("/{id}", {
+                    description = "Eliminar evento por id."
+                    request {
+                        pathParameter<String>("id") {
+                            description = "Id del evento a eliminar"
+                            required = true
+                        }
+                    }
+                    response {
+                        HttpStatusCode.NoContent to {
+                            description = "Evento eliminado."
+                        }
+                        HttpStatusCode.Forbidden to {
+                            description = "No tiene permisos para realizar la accion."
+                            body<String> { description = "No tiene permisos." }
+                        }
+                        HttpStatusCode.NotFound to {
+                            description = "No se ha encontrado el evento."
+                            body<String> { description = "No existe el evento con la id" }
+                        }
+                        HttpStatusCode.BadRequest to {
+                            description = "No ha sido posible eliminar el evento."
+                            body<String> { description = "Los datos del evento no son correctos." }
+                        }
+                    }
+                }) {
                     val rol = getRol()
                     if(rol.equals("ADMIN")){
                         try {
@@ -133,7 +251,37 @@ fun Application.eventoRoutes(){
 
         }
         route("/ranking"){
-            put("/{id}"){
+            put("/{id}",  {
+                description = "Actualizar ranking de un evento por id."
+                request {
+                    pathParameter<String>("id") {
+                        description = "Id del evento a actualizar el ranking"
+                        required = true
+                    }
+                    body<Ranking> {
+                        description = "Datos del ranking a añadir."
+                        required = true
+                    }
+                }
+                response {
+                    HttpStatusCode.OK to {
+                        description = "Actualizado correctamente el evento"
+                        body<EventoDTO> { description = "Evento actualizado" }
+                    }
+                    HttpStatusCode.Forbidden to {
+                        description = "No tiene permisos para realizar la accion."
+                        body<String> { description = "No tiene permisos." }
+                    }
+                    HttpStatusCode.NotFound to {
+                        description = "No se ha encontrado el evento."
+                        body<String> { description = "No existe el evento con la id" }
+                    }
+                    HttpStatusCode.BadRequest to {
+                        description = "No ha sido posible actualizar el evento."
+                        body<String> { description = "Los datos del evento no son correctos." }
+                    }
+                }
+            }){
                 try {
                     val id = ObjectId(call.parameters["id"])
                     val ranking = call.receive<Ranking>()

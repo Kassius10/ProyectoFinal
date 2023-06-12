@@ -8,11 +8,14 @@ val bcrypt_version: String by project
 
 val mockk_version: String by project
 
+val ktor_swagger_ui_version: String by project
+
 plugins {
     kotlin("jvm") version "1.8.10"
     id("io.ktor.plugin") version "2.2.4"
     id("org.jetbrains.kotlin.plugin.serialization") version "1.8.10"
     id("com.google.devtools.ksp") version "1.8.10-1.0.9"
+    id("org.jetbrains.dokka") version "1.7.20"
 }
 
 group = "com.proyecto"
@@ -26,12 +29,14 @@ application {
 
 repositories {
     mavenCentral()
+    maven("https://jitpack.io")
 }
 
 dependencies {
     implementation("io.ktor:ktor-server-core-jvm:$ktor_version")
     implementation("io.ktor:ktor-server-websockets-jvm:$ktor_version")
     implementation("io.ktor:ktor-server-cors-jvm:$ktor_version")
+    implementation("io.ktor:ktor-server-swagger:$ktor_version")
     implementation("io.ktor:ktor-server-content-negotiation-jvm:$ktor_version")
     implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:$ktor_version")
     implementation("io.ktor:ktor-server-netty-jvm:$ktor_version")
@@ -73,6 +78,8 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
 
     testImplementation("io.mockk:mockk:$mockk_version")
+
+    implementation("io.github.smiley4:ktor-swagger-ui:$ktor_swagger_ui_version")
 
 }
 sourceSets.main {

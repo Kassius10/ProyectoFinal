@@ -3,7 +3,6 @@ package com.proyecto.models
 import com.proyecto.serializer.LocalDateTimeSerializer
 import com.proyecto.serializer.ObjectIdSerializer
 import kotlinx.serialization.Serializable
-import org.bson.BsonObjectId
 import org.bson.codecs.pojo.annotations.BsonId
 import org.bson.types.ObjectId
 import java.time.LocalDateTime

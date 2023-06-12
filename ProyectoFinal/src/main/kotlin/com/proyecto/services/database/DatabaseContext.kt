@@ -15,7 +15,6 @@ class DatabaseContext {
 
     init{
         val property= Property("mongo.properties")
-        println(property.getKey("database.uri"))
         mongoClient = KMongo.createClient(property.getKey("database.uri"))
             .coroutine
         mongoDatabase = mongoClient.getDatabase(property.getKey("database.database"))
