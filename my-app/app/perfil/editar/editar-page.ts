@@ -56,7 +56,7 @@ export function save(args: EventData) {
 
   console.log(usuario.id)
   Http.request({
-    url: "http:192.168.3.25:8080/usuario/" + user.id,
+    url: "https://api-ginkanago.onrender.com/usuario/" + user.id,
     method: "PUT",
     headers: { "Content-Type": "application/json", "Authorization": "Bearer " + token },
     content: JSON.stringify({

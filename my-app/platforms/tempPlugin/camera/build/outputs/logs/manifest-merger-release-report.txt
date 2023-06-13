@@ -1,51 +1,51 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:2:1-9:12
-INJECTED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:2:1-9:12
-INJECTED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:2:1-9:12
+ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:2:1-9:12
 	package
-		ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:2:117-150
-		INJECTED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
+		ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:2:117-150
+		INJECTED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:2:70-116
+		ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:2:70-116
 	xmlns:android
-		ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:3:3-7:17
+ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:3:3-7:17
 provider#androidx.core.content.FileProvider
-ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:4:5-6:16
+ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:4:5-6:16
 	android:grantUriPermissions
-		ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:4:138-172
+		ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:4:138-172
 	android:authorities
-		ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:4:65-112
+		ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:4:65-112
 	android:exported
-		ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:4:113-137
+		ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:4:113-137
 	android:name
-		ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:4:15-64
+		ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:4:15-64
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:5:7-142
+ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:5:7-142
 	android:resource
-		ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:5:102-140
+		ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:5:102-140
 	tools:replace
-		ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:5:69-101
+		ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:5:69-101
 	android:name
-		ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:5:18-68
+		ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:5:18-68
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:8:3-62
+ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:8:3-62
 	android:name
-		ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:8:20-60
+		ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml:8:20-60
 uses-sdk
-INJECTED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
-INJECTED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
-INJECTED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
-INJECTED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
+INJECTED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
+INJECTED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
+INJECTED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
+INJECTED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
-		ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
+		ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
-		ADDED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
+		ADDED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\AndroidManifest.xml

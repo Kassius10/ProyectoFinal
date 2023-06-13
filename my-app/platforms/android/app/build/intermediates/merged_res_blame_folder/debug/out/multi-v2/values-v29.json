@@ -4,7 +4,7 @@
             "outputFile": "org.nativescript.myapp-mergeDebugResources-36:/values-v29/values-v29.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\danii\\Desktop\\nativescript-prueba\\my-app\\platforms\\android\\app\\src\\main\\res\\values-v29\\styles.xml",
+                    "source": "C:\\Users\\danii\\Desktop\\ProyectoFinal\\my-app\\platforms\\android\\app\\src\\main\\res\\values-v29\\styles.xml",
                     "from": {
                         "startLines": "14,4",
                         "startColumns": "4,4",

@@ -1,1 +1,1 @@
-C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app/src/main/java
+C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app/src/main/java

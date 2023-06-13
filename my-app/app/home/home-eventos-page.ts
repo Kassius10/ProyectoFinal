@@ -68,7 +68,7 @@ export function lookRanking(args: EventData){
 
 function load(page: Page, token: string){
   Http.request({
-    url: "http:192.168.3.25:8080/evento",
+    url: "https://api-ginkanago.onrender.com/evento",
     method: "GET",
     headers: { "Authorization": "Bearer " + token }
   })

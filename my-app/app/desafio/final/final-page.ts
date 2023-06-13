@@ -28,8 +28,6 @@ function getTime(page: Page) {
    const timeFinal = new Date().getTime().toString();
 
    const time = parseInt(timeFinal) - parseInt(timeInicial);
-
-   // El tiempo tiene que salir asi 00:00:00:00
    
    const horas = Math.floor(time / 3600000);
    const minutos = Math.floor((time % 3600000) / 60000);
@@ -48,7 +46,7 @@ export function onTap(args: EventData){
    console.log(username)
    console.log(tiempofinal)
    Http.request({
-      url: "http:192.168.3.25:8080/ranking/"+ evento.id,
+      url: "https://api-ginkanago.onrender.com/ranking/"+ evento.id,
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       content: JSON.stringify({

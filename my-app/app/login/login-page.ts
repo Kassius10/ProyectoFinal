@@ -25,7 +25,7 @@ export function onLogin(args: EventData) {
     username.text = "";
   } else {
     Http.request({
-      url: "http:192.168.3.25:8080/login",
+      url: "https://api-ginkanago.onrender.com/login",
       method: "POST",
       headers: { "Content-Type": "application/json" },
       content: JSON.stringify({ userName: username.text, password: password.text })

@@ -6,42 +6,42 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
-8-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml
+8-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml
+9-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml
 10
 11    <supports-screens
-11-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:5:2-9:33
+11-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:5:2-9:33
 12        android:largeScreens="true"
-12-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:8:3-30
+12-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:8:3-30
 13        android:normalScreens="true"
-13-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:7:3-31
+13-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:7:3-31
 14        android:smallScreens="true"
-14-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:6:3-30
+14-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:6:3-30
 15        android:xlargeScreens="true" />
-15-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:9:3-31
+15-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:9:3-31
 16
 17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-17-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:11:2-76
-17-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:11:19-74
+17-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:11:2-76
+17-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:11:19-74
 18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-18-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:12:2-77
-18-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:12:19-75
+18-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:12:2-77
+18-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:12:19-75
 19    <uses-permission android:name="android.permission.INTERNET" />
-19-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:13:2-63
-19-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:13:19-61
+19-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:13:2-63
+19-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:13:19-61
 20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-20-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:14:2-75
-20-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:14:19-73
+20-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:14:2-75
+20-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:14:19-73
 21    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-21-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:17:2-76
-21-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:17:19-73
+21-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:17:2-76
+21-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:17:19-73
 22    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-22-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:18:3-79
-22-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:18:20-76
+22-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:18:3-79
+22-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:18:20-76
 23    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-23-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:19:3-83
-23-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:19:20-80
+23-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:19:3-83
+23-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:19:20-80
 24
 25    <uses-feature
 25-->[com.google.android.gms:play-services-maps:18.0.1] C:\Users\danii\.gradle\caches\transforms-3\e920a3d903bf7f99cbed374594986fe5\transformed\jetified-play-services-maps-18.0.1\AndroidManifest.xml:26:5-28:35
@@ -74,68 +74,68 @@
 40-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:14:9-33
 41
 42    <application
-42-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:21:2-49:16
+42-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:21:2-49:16
 43        android:name="com.tns.NativeScriptApplication"
-43-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:22:3-49
+43-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:22:3-49
 44        android:allowBackup="true"
-44-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:23:3-29
+44-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:23:3-29
 45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 45-->[androidx.core:core:1.8.0] C:\Users\danii\.gradle\caches\transforms-3\074d277dec48bbdb0988045e5831ae46\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 46        android:debuggable="true"
 47        android:hardwareAccelerated="true"
-47-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:28:3-37
+47-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:28:3-37
 48        android:icon="@mipmap/ic_launcher"
-48-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:24:3-37
+48-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:24:3-37
 49        android:label="@string/app_name"
-49-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:25:3-35
+49-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:25:3-35
 50        android:theme="@style/AppTheme"
-50-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:26:3-34
+50-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:26:3-34
 51        android:usesCleartextTraffic="true" >
-51-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:27:3-38
+51-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:27:3-38
 52        <meta-data
-52-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:30:3-118
+52-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:30:3-118
 53            android:name="com.google.android.geo.API_KEY"
-53-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:30:14-59
+53-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:30:14-59
 54            android:value="AIzaSyD49pC3uEyoPTgcsHTzdF2naW9xjDEXveg" />
-54-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:30:60-115
+54-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:30:60-115
 55
 56        <activity
-56-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:32:3-47:14
+56-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:32:3-47:14
 57            android:name="com.tns.NativeScriptActivity"
-57-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:33:4-47
+57-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:33:4-47
 58            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale|uiMode"
-58-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:35:4-120
+58-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:35:4-120
 59            android:exported="true"
-59-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:39:4-27
+59-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:39:4-27
 60            android:hardwareAccelerated="true"
-60-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:37:4-38
+60-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:37:4-38
 61            android:label="@string/title_activity_kimera"
-61-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:34:4-49
+61-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:34:4-49
 62            android:launchMode="singleTask"
-62-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:38:9-40
+62-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:38:9-40
 63            android:theme="@style/LaunchScreenTheme" >
-63-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:36:4-44
+63-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:36:4-44
 64            <meta-data
-64-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:41:4-87
+64-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:41:4-87
 65                android:name="SET_THEME_ON_LAUNCH"
-65-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:41:15-49
+65-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:41:15-49
 66                android:resource="@style/AppTheme" />
-66-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:41:50-84
+66-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:41:50-84
 67
 68            <intent-filter>
-68-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:43:4-46:20
+68-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:43:4-46:20
 69                <action android:name="android.intent.action.MAIN" />
-69-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:44:5-57
-69-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:44:13-54
+69-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:44:5-57
+69-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:44:13-54
 70
 71                <category android:name="android.intent.category.LAUNCHER" />
-71-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:45:5-65
-71-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:45:15-62
+71-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:45:5-65
+71-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:45:15-62
 72            </intent-filter>
 73        </activity>
 74        <activity android:name="com.tns.ErrorReportActivity" />
-74-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:48:3-57
-74-->C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\android\app\src\main\AndroidManifest.xml:48:13-55
+74-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:48:3-57
+74-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:48:13-55
 75        <!-- Needs to be explicitly declared on P+ -->
 76        <uses-library
 76-->[com.google.android.gms:play-services-maps:18.0.1] C:\Users\danii\.gradle\caches\transforms-3\e920a3d903bf7f99cbed374594986fe5\transformed\jetified-play-services-maps-18.0.1\AndroidManifest.xml:39:9-41:40

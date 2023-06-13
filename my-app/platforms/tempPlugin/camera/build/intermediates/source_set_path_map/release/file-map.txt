@@ -1,8 +1,8 @@
-org.nativescript.camera-pngs-0 C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\build\generated\res\pngs\release
-org.nativescript.camera-resValues-1 C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\build\generated\res\resValues\release
-org.nativescript.camera-rs-2 C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\build\generated\res\rs\release
-org.nativescript.camera-mergeReleaseResources-3 C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
-org.nativescript.camera-mergeReleaseResources-4 C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
-org.nativescript.camera-merged_res-5 C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\build\intermediates\merged_res\release
-org.nativescript.camera-main-6 C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\main\res
-org.nativescript.camera-release-7 C:\Users\danii\Desktop\nativescript-prueba\my-app\platforms\tempPlugin\camera\src\release\res
+org.nativescript.camera-pngs-0 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\build\generated\res\pngs\release
+org.nativescript.camera-resValues-1 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\build\generated\res\resValues\release
+org.nativescript.camera-rs-2 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\build\generated\res\rs\release
+org.nativescript.camera-mergeReleaseResources-3 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
+org.nativescript.camera-mergeReleaseResources-4 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+org.nativescript.camera-merged_res-5 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\build\intermediates\merged_res\release
+org.nativescript.camera-main-6 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\main\res
+org.nativescript.camera-release-7 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\camera\src\release\res
