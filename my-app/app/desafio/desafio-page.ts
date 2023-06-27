@@ -13,6 +13,7 @@ var evento: Evento
 var desafio: Desafio
 var numDesafios= 0
 var numDesafio= 0
+var key = ""
 
 export function onNavigatingTo(args: NavigatedData) {
    page = args.object as Page;
@@ -80,7 +81,7 @@ export function onReady(event: MapReadyEvent) {
 function drawApi(location: Location, map: GoogleMap, direccion: Direccion ) {
    const origin = location.latitude + "," + location.longitude;
    const destination = direccion.latitud + "," + direccion.longitud;
-   const key = "AIzaSyD49pC3uEyoPTgcsHTzdF2naW9xjDEXveg"
+  
    Http.request({
       url: "https://maps.googleapis.com/maps/api/directions/json?origin=" + origin + "&destination=" + destination + "&key=" + key + "&mode=walking",
       method: "GET",
