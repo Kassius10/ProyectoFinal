@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "org.nativescript.google_maps-merged_res-9:/drawable-v21/notification_action_background.xml",
+        "source": "org.nativescript.google_maps-core-1.2.0-2:/drawable-v21/notification_action_background.xml"
+    }
+]

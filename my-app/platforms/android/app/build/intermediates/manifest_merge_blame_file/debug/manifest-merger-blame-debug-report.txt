@@ -1,0 +1,229 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.nativescript.myapp"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml
+10
+11    <supports-screens
+11-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:5:2-9:33
+12        android:largeScreens="true"
+12-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:8:3-30
+13        android:normalScreens="true"
+13-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:7:3-31
+14        android:smallScreens="true"
+14-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:6:3-30
+15        android:xlargeScreens="true" />
+15-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:9:3-31
+16
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:11:2-76
+17-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:11:19-74
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:12:2-77
+18-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:12:19-75
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:13:2-63
+19-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:13:19-61
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:14:2-75
+20-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:14:19-73
+21    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+21-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:17:2-76
+21-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:17:19-73
+22    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+22-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:18:3-79
+22-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:18:20-76
+23    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+23-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:19:3-83
+23-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:19:20-80
+24
+25    <uses-feature
+25-->[com.google.android.gms:play-services-maps:18.0.1] C:\Users\danii\.gradle\caches\transforms-3\e920a3d903bf7f99cbed374594986fe5\transformed\jetified-play-services-maps-18.0.1\AndroidManifest.xml:26:5-28:35
+26        android:glEsVersion="0x00020000"
+26-->[com.google.android.gms:play-services-maps:18.0.1] C:\Users\danii\.gradle\caches\transforms-3\e920a3d903bf7f99cbed374594986fe5\transformed\jetified-play-services-maps-18.0.1\AndroidManifest.xml:27:9-41
+27        android:required="true" />
+27-->[com.google.android.gms:play-services-maps:18.0.1] C:\Users\danii\.gradle\caches\transforms-3\e920a3d903bf7f99cbed374594986fe5\transformed\jetified-play-services-maps-18.0.1\AndroidManifest.xml:28:9-32
+28
+29    <queries>
+29-->[com.google.android.gms:play-services-maps:18.0.1] C:\Users\danii\.gradle\caches\transforms-3\e920a3d903bf7f99cbed374594986fe5\transformed\jetified-play-services-maps-18.0.1\AndroidManifest.xml:30:5-34:15
+30
+31        <!-- Needs to be explicitly declared on Android R+ -->
+32        <package android:name="com.google.android.apps.maps" />
+32-->[com.google.android.gms:play-services-maps:18.0.1] C:\Users\danii\.gradle\caches\transforms-3\e920a3d903bf7f99cbed374594986fe5\transformed\jetified-play-services-maps-18.0.1\AndroidManifest.xml:33:9-64
+32-->[com.google.android.gms:play-services-maps:18.0.1] C:\Users\danii\.gradle\caches\transforms-3\e920a3d903bf7f99cbed374594986fe5\transformed\jetified-play-services-maps-18.0.1\AndroidManifest.xml:33:18-61
+33    </queries>
+34
+35    <uses-permission android:name="android.permission.CAMERA" />
+35-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:9:5-65
+35-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:9:22-62
+36    <uses-permission android:name="android.permission.FLASHLIGHT" />
+36-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:10:5-69
+36-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:10:22-66
+37
+38    <uses-feature
+38-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:12:5-14:36
+39        android:name="android.hardware.camera"
+39-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:13:9-47
+40        android:required="false" />
+40-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:14:9-33
+41
+42    <application
+42-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:21:2-49:16
+43        android:name="com.tns.NativeScriptApplication"
+43-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:22:3-49
+44        android:allowBackup="true"
+44-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:23:3-29
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.8.0] C:\Users\danii\.gradle\caches\transforms-3\074d277dec48bbdb0988045e5831ae46\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+46        android:debuggable="true"
+47        android:hardwareAccelerated="true"
+47-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:28:3-37
+48        android:icon="@mipmap/ic_launcher"
+48-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:24:3-37
+49        android:label="@string/app_name"
+49-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:25:3-35
+50        android:theme="@style/AppTheme"
+50-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:26:3-34
+51        android:usesCleartextTraffic="true" >
+51-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:27:3-38
+52        <meta-data
+52-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:30:3-118
+53            android:name="com.google.android.geo.API_KEY"
+53-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:30:14-59
+54            android:value="AIzaSyD49pC3uEyoPTgcsHTzdF2naW9xjDEXveg" />
+54-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:30:60-115
+55
+56        <activity
+56-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:32:3-47:14
+57            android:name="com.tns.NativeScriptActivity"
+57-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:33:4-47
+58            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|locale|uiMode"
+58-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:35:4-120
+59            android:exported="true"
+59-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:39:4-27
+60            android:hardwareAccelerated="true"
+60-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:37:4-38
+61            android:label="@string/title_activity_kimera"
+61-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:34:4-49
+62            android:launchMode="singleTask"
+62-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:38:9-40
+63            android:theme="@style/LaunchScreenTheme" >
+63-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:36:4-44
+64            <meta-data
+64-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:41:4-87
+65                android:name="SET_THEME_ON_LAUNCH"
+65-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:41:15-49
+66                android:resource="@style/AppTheme" />
+66-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:41:50-84
+67
+68            <intent-filter>
+68-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:43:4-46:20
+69                <action android:name="android.intent.action.MAIN" />
+69-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:44:5-57
+69-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:44:13-54
+70
+71                <category android:name="android.intent.category.LAUNCHER" />
+71-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:45:5-65
+71-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:45:15-62
+72            </intent-filter>
+73        </activity>
+74        <activity android:name="com.tns.ErrorReportActivity" />
+74-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:48:3-57
+74-->C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\android\app\src\main\AndroidManifest.xml:48:13-55
+75        <!-- Needs to be explicitly declared on P+ -->
+76        <uses-library
+76-->[com.google.android.gms:play-services-maps:18.0.1] C:\Users\danii\.gradle\caches\transforms-3\e920a3d903bf7f99cbed374594986fe5\transformed\jetified-play-services-maps-18.0.1\AndroidManifest.xml:39:9-41:40
+77            android:name="org.apache.http.legacy"
+77-->[com.google.android.gms:play-services-maps:18.0.1] C:\Users\danii\.gradle\caches\transforms-3\e920a3d903bf7f99cbed374594986fe5\transformed\jetified-play-services-maps-18.0.1\AndroidManifest.xml:40:13-50
+78            android:required="false" />
+78-->[com.google.android.gms:play-services-maps:18.0.1] C:\Users\danii\.gradle\caches\transforms-3\e920a3d903bf7f99cbed374594986fe5\transformed\jetified-play-services-maps-18.0.1\AndroidManifest.xml:41:13-37
+79
+80        <activity
+80-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\danii\.gradle\caches\transforms-3\385b985c7c8406a6e4bcb5aae324626c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+81            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+81-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\danii\.gradle\caches\transforms-3\385b985c7c8406a6e4bcb5aae324626c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+82            android:exported="false"
+82-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\danii\.gradle\caches\transforms-3\385b985c7c8406a6e4bcb5aae324626c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+83            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+83-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\danii\.gradle\caches\transforms-3\385b985c7c8406a6e4bcb5aae324626c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+84
+85        <meta-data
+85-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\danii\.gradle\caches\transforms-3\62c3e2fc1bf01d256f0e78eca14c6ad5\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+86            android:name="com.google.android.gms.version"
+86-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\danii\.gradle\caches\transforms-3\62c3e2fc1bf01d256f0e78eca14c6ad5\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+87            android:value="@integer/google_play_services_version" />
+87-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\danii\.gradle\caches\transforms-3\62c3e2fc1bf01d256f0e78eca14c6ad5\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+88
+89        <activity
+89-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:17:9-29:20
+90            android:name="com.google.zxing.client.android.CaptureActivity"
+90-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:18:13-75
+91            android:clearTaskOnLaunch="true"
+91-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:19:13-45
+92            android:configChanges="keyboardHidden|orientation|screenSize"
+92-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:20:13-74
+93            android:exported="false"
+93-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:21:13-37
+94            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+94-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:22:13-71
+95            android:windowSoftInputMode="stateAlwaysHidden" >
+95-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:23:13-60
+96            <intent-filter>
+96-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:24:13-28:29
+97                <action android:name="com.google.zxing.client.android.SCAN" />
+97-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:25:17-79
+97-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:25:25-76
+98
+99                <category android:name="android.intent.category.DEFAULT" />
+99-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:27:17-76
+99-->[:nativescript_barcodescanner:] C:\Users\danii\.gradle\caches\transforms-3\9cc72664e87c578ff9a7aa1ca88dfdc7\transformed\jetified-nativescript_barcodescanner\AndroidManifest.xml:27:27-73
+100            </intent-filter>
+101        </activity>
+102
+103        <provider
+103-->[:camera:] C:\Users\danii\.gradle\caches\transforms-3\c636fb4d1dcb97af0e8f093e9a4b501f\transformed\jetified-camera\AndroidManifest.xml:13:9-22:20
+104            android:name="androidx.core.content.FileProvider"
+104-->[:camera:] C:\Users\danii\.gradle\caches\transforms-3\c636fb4d1dcb97af0e8f093e9a4b501f\transformed\jetified-camera\AndroidManifest.xml:14:13-62
+105            android:authorities="org.nativescript.myapp.provider"
+105-->[:camera:] C:\Users\danii\.gradle\caches\transforms-3\c636fb4d1dcb97af0e8f093e9a4b501f\transformed\jetified-camera\AndroidManifest.xml:15:13-60
+106            android:exported="false"
+106-->[:camera:] C:\Users\danii\.gradle\caches\transforms-3\c636fb4d1dcb97af0e8f093e9a4b501f\transformed\jetified-camera\AndroidManifest.xml:16:13-37
+107            android:grantUriPermissions="true" >
+107-->[:camera:] C:\Users\danii\.gradle\caches\transforms-3\c636fb4d1dcb97af0e8f093e9a4b501f\transformed\jetified-camera\AndroidManifest.xml:17:13-47
+108            <meta-data
+108-->[:camera:] C:\Users\danii\.gradle\caches\transforms-3\c636fb4d1dcb97af0e8f093e9a4b501f\transformed\jetified-camera\AndroidManifest.xml:18:13-21:52
+109                android:name="android.support.FILE_PROVIDER_PATHS"
+109-->[:camera:] C:\Users\danii\.gradle\caches\transforms-3\c636fb4d1dcb97af0e8f093e9a4b501f\transformed\jetified-camera\AndroidManifest.xml:19:17-67
+110                android:resource="@xml/provider_paths" />
+110-->[:camera:] C:\Users\danii\.gradle\caches\transforms-3\c636fb4d1dcb97af0e8f093e9a4b501f\transformed\jetified-camera\AndroidManifest.xml:20:17-55
+111        </provider>
+112        <provider
+112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danii\.gradle\caches\transforms-3\cd94dddcc365663510cd04e0c21137c7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+113            android:name="androidx.startup.InitializationProvider"
+113-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danii\.gradle\caches\transforms-3\cd94dddcc365663510cd04e0c21137c7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+114            android:authorities="org.nativescript.myapp.androidx-startup"
+114-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danii\.gradle\caches\transforms-3\cd94dddcc365663510cd04e0c21137c7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+115            android:exported="false" >
+115-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danii\.gradle\caches\transforms-3\cd94dddcc365663510cd04e0c21137c7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+116            <meta-data
+116-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danii\.gradle\caches\transforms-3\cd94dddcc365663510cd04e0c21137c7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+117                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+117-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danii\.gradle\caches\transforms-3\cd94dddcc365663510cd04e0c21137c7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+118                android:value="androidx.startup" />
+118-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danii\.gradle\caches\transforms-3\cd94dddcc365663510cd04e0c21137c7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+119            <meta-data
+119-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\danii\.gradle\caches\transforms-3\b5430a13f4c415950222213118338065\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+120                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+120-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\danii\.gradle\caches\transforms-3\b5430a13f4c415950222213118338065\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+121                android:value="androidx.startup" />
+121-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\danii\.gradle\caches\transforms-3\b5430a13f4c415950222213118338065\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+122        </provider>
+123    </application>
+124
+125</manifest>

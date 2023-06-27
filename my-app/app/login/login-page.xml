@@ -1,0 +1,34 @@
+<Page navigatingTo="onNavigatingTo"
+   xmlns="http://schemas.nativescript.org/tns.xsd"
+   backgroundColor="#e6e6e6">
+
+   <StackLayout>
+      <Image src="res://logo" stretch="aspectFit" verticalAlignment="center"
+         horizontalAlignment="center" height="40%" />
+      <StackLayout class="form">
+         <label text="INICIAR SESIÓN" class="h2 text-center" color="#253649" fontWeight="bold"></label>
+         <StackLayout class="input-field" orientation="horizontal">
+            <Label text="&#xf007;" class="fas" fontSize="20" color="#253649"
+               verticalAlignment="center"></Label>
+            <TextField autocorrect="false" autocapitalizationType="none" id="username"
+               verticalAlignment="center" width="100%"></TextField>
+         </StackLayout>
+
+         <StackLayout class="input-field" orientation="horizontal">
+            <Label text="&#xf023;" class="fas" fontSize="20" color="#253649"
+               verticalAlignment="center"></Label>
+            <TextField id="password" secure="true" autocorrect="false"
+               autocapitalizationType="none" verticalAlignment="center" width="100%" color="black" ></TextField>
+         </StackLayout>
+
+         <Button text="Iniciar Sesion" tap="onLogin" fontSize="16" class="m-t-20" androidElevation="5" androidDynamicElevationOffset="10"/>
+
+         <StackLayout orientation="horizontal" horizontalAlignment="center">
+            <Label text="¿No tienes cuenta?  " class="body m-t-30" color="black" />
+            <Label text="Crear cuenta" class="register body m-t-30" color="#47688d" fontWeight="bold" tap="onRegister" />
+         </StackLayout>
+
+      </StackLayout>
+   </StackLayout>
+
+</Page>

@@ -1,0 +1,23 @@
+<Page navigatingTo="onNavigatingTo"
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:lv="nativescript-ui-listview"
+    backgroundColor="#e6e6e6">
+
+    <ActionBar>
+        <NavigationButton tap="onBackButtonTap" android.systemIcon="ic_menu_back" />
+        <Label text="RANKING" class="tab__label" maxLines="1" />
+    </ActionBar>
+    <ScrollView>
+        <lv:RadListView items="{{ ranking }}" margin="10 20 0 20">
+            <lv:RadListView.itemTemplate>
+                <GridLayout rows="auto" columns="auto, auto, auto" class="ranking-item"
+                    horizontalAlignment="center" width="100%" marginTop="10">
+                    <Label text="{{ posicion }}" col="0" class="position-label" />
+                    <Label text="{{ userName }}" col="1" class="username-label" />
+                    <Label text="{{ tiempo }}" class="time-label text-right" col="2"
+                        textWrap="true" />
+                </GridLayout>
+            </lv:RadListView.itemTemplate>
+        </lv:RadListView>
+    </ScrollView>
+</Page>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "org.nativescript.google_maps-merged_res-9:/layout-v21/notification_action_tombstone.xml",
+        "source": "org.nativescript.google_maps-core-1.2.0-2:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "org.nativescript.google_maps-merged_res-9:/layout-v21/notification_template_custom_big.xml",
+        "source": "org.nativescript.google_maps-core-1.2.0-2:/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "org.nativescript.google_maps-merged_res-9:/layout-v21/notification_action.xml",
+        "source": "org.nativescript.google_maps-core-1.2.0-2:/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "org.nativescript.google_maps-merged_res-9:/layout-v21/notification_template_icon_group.xml",
+        "source": "org.nativescript.google_maps-core-1.2.0-2:/layout-v21/notification_template_icon_group.xml"
+    }
+]

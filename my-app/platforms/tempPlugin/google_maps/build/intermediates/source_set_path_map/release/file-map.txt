@@ -1,0 +1,13 @@
+org.nativescript.google_maps-jetified-play-services-base-18.0.0-0 C:\Users\danii\.gradle\caches\transforms-3\4f95445364f37ab3982e81bc7341be9c\transformed\jetified-play-services-base-18.0.0\res
+org.nativescript.google_maps-jetified-play-services-maps-18.0.1-1 C:\Users\danii\.gradle\caches\transforms-3\8798b90d624f47968cdf2b81ccc28e89\transformed\jetified-play-services-maps-18.0.1\res
+org.nativescript.google_maps-core-1.2.0-2 C:\Users\danii\.gradle\caches\transforms-3\a9105ec1e4ae77a5020c8e1db08769e0\transformed\core-1.2.0\res
+org.nativescript.google_maps-coordinatorlayout-1.0.0-3 C:\Users\danii\.gradle\caches\transforms-3\d1c49787182d91a14427ebffcbe824e8\transformed\coordinatorlayout-1.0.0\res
+org.nativescript.google_maps-jetified-play-services-basement-18.0.0-4 C:\Users\danii\.gradle\caches\transforms-3\f908ba0cce5885736530960c688123c5\transformed\jetified-play-services-basement-18.0.0\res
+org.nativescript.google_maps-pngs-5 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\google_maps\build\generated\res\pngs\release
+org.nativescript.google_maps-resValues-6 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\google_maps\build\generated\res\resValues\release
+org.nativescript.google_maps-rs-7 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\google_maps\build\generated\res\rs\release
+org.nativescript.google_maps-mergeReleaseResources-8 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\google_maps\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
+org.nativescript.google_maps-mergeReleaseResources-9 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\google_maps\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+org.nativescript.google_maps-merged_res-10 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\google_maps\build\intermediates\merged_res\release
+org.nativescript.google_maps-main-11 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\google_maps\src\main\res
+org.nativescript.google_maps-release-12 C:\Users\danii\Desktop\ProyectoFinal\my-app\platforms\tempPlugin\google_maps\src\release\res

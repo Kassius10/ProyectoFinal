@@ -1,0 +1,26 @@
+<Page navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd"
+    backgroundColor="#e6e6e6">
+
+    <ActionBar>
+        <NavigationButton tap="onBackButtonTap" android.systemIcon="ic_menu_back" />
+        <Label text="{{ nombre }}" class="tab__label" maxLines="1" />
+    </ActionBar>
+    <ScrollView>
+        <StackLayout orientation="vertical">
+            <Image src="res://imgdefault" stretch="aspectFill" height="40%" />
+            <Label class="descripcion__evento m-20" text="{{ descripcion }}" textWrap="true"/>
+
+            <StackLayout orientation="horizontal" style="margin: 20 0 0 20">
+                <Label class="text__evento" text="Lugar: " fontWeight="bold" />
+                <Label class="text__evento" text="{{ lugar }}" />
+            </StackLayout>
+
+            <StackLayout orientation="horizontal" style="margin: 10 0 0 20">
+                <Label class="text__evento" text="Fecha: " fontWeight="bold" />
+                <Label class="text__evento" text="{{ fecha }}" />
+            </StackLayout>
+
+            <Button class="m-t-20" text="¡ PARTICIPAR !" tap="onTap" fontSize="18" marginBottom="20"/>
+        </StackLayout>
+    </ScrollView>
+</Page>

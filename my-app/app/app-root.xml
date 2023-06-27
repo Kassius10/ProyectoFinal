@@ -1,0 +1,11 @@
+<Page navigatingTo="onNavigatingTo">
+    <TabView androidTabsPosition="bottom">
+        <TabViewItem title="&#xf015;" class="fas ico_tab">
+            <Frame defaultPage="home/home-eventos-page" />
+        </TabViewItem>
+
+        <TabViewItem title="&#xf2bd;" class="fas ico_tab">
+            <Frame defaultPage="perfil/perfil-page" />
+        </TabViewItem>
+    </TabView>
+</Page>

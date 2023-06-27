@@ -1,0 +1,2 @@
+org.nativescript.camera
+xml provider_paths

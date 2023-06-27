@@ -1,0 +1,174 @@
+[
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-mdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-mdpi/ic_launcher_adaptive_back.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-hdpi_background.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-hdpi/background.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-xxhdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-xxhdpi/ic_launcher_adaptive_back.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-xxxhdpi_ic_launcher_adaptive_fore.png.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-xxxhdpi/ic_launcher_adaptive_fore.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-hdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-hdpi/ic_launcher_adaptive_back.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-xxxhdpi_logo.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-xxxhdpi/logo.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-mdpi_logo.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-mdpi/logo.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-ldpi_logo.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-ldpi/logo.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-xxhdpi_ic_arrow_forward.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-xxhdpi/ic_arrow_forward.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/layout_logcat_tab.xml.flat",
+        "source": "org.nativescript.myapp-debug-39:/layout/logcat_tab.xml"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-xxxhdpi_background.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-xxxhdpi/background.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/layout_error_activity.xml.flat",
+        "source": "org.nativescript.myapp-debug-39:/layout/error_activity.xml"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-xxhdpi_background.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-xxhdpi/background.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-mdpi_ic_arrow_forward.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-mdpi/ic_arrow_forward.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-xxxhdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-xxxhdpi/ic_launcher_adaptive_back.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-mdpi_imgdefault.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-mdpi/imgdefault.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-xhdpi_imgdefault.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-xhdpi/imgdefault.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-hdpi_ic_launcher_adaptive_fore.png.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-hdpi/ic_launcher_adaptive_fore.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-xxhdpi_logo.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-xxhdpi/logo.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-xhdpi_ic_launcher_adaptive_fore.png.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-xhdpi/ic_launcher_adaptive_fore.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-xxhdpi_ic_launcher_adaptive_fore.png.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-xxhdpi/ic_launcher_adaptive_fore.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-hdpi_ic_arrow_forward.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-hdpi/ic_arrow_forward.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-mdpi_background.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-mdpi/background.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-xxhdpi_imgdefault.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-xxhdpi/imgdefault.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-xhdpi_logo.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-xhdpi/logo.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-xxxhdpi_imgdefault.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-xxxhdpi/imgdefault.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-nodpi_splash_screen.xml.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-nodpi/splash_screen.xml"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-hdpi_imgdefault.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-hdpi/imgdefault.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-xhdpi_ic_arrow_forward.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-xhdpi/ic_arrow_forward.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-xhdpi_background.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-xhdpi/background.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-xhdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-xhdpi/ic_launcher_adaptive_back.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-mdpi_ic_launcher_adaptive_fore.png.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-mdpi/ic_launcher_adaptive_fore.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-ldpi_background.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-ldpi/background.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-xxxhdpi_ic_arrow_forward.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-xxxhdpi/ic_arrow_forward.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/drawable-hdpi_logo.png.flat",
+        "source": "org.nativescript.myapp-main-40:/drawable-hdpi/logo.png"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/layout_exception_tab.xml.flat",
+        "source": "org.nativescript.myapp-debug-39:/layout/exception_tab.xml"
+    },
+    {
+        "merged": "org.nativescript.myapp-merged_res-38:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "org.nativescript.myapp-main-40:/mipmap-hdpi/ic_launcher.png"
+    }
+]
